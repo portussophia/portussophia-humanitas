@@ -66,10 +66,15 @@
 }
 
 .page {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   padding: 0;
 }
 
 .page-header--navy {
+  width: 100%;
   margin: 0;
   padding: clamp(4.75rem, 6vw, 5.5rem) 0 clamp(2rem, 4vw, 3rem);
   border-bottom: 1px solid rgba(204, 204, 204, 0.28);

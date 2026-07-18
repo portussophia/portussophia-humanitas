@@ -113,7 +113,7 @@
   width: min(calc(100% - 2.5rem), var(--shell, 76rem));
   min-height: var(--shoreline-height, clamp(13rem, 27vh, 21rem));
   margin-inline: auto;
-  padding: clamp(1rem, 2vw, 1.45rem) 0;
+  padding: clamp(1rem, 1vw, 1.45rem) 0;
   grid-template-columns: minmax(0, 1fr) 3.25rem;
   align-items: start;
 }
@@ -152,6 +152,7 @@
 }
 
 .site-header--shoreline .site-role {
+  margin-top: 0;
   color: var(--ps-dark, #1a1a2e);
   font-size: 1.25rem;
   font-weight: 500;

@@ -1,17 +1,19 @@
-title: PortusSophia Humanitas
+title: "PortusHumanitas™"
 description: >-
-  Public corpus and provenance record for the PortusSophia philosophy-of-science
-  research program.
+  The governed humanistic provenance corpus from which the later
+  PortusSophia™ research architecture became necessary.
+url: "https://humanitas.portussophia.com"
 baseurl: ""
-url: ""
+author: "James Roy Dennis"
+asset_version: "20260717-1"
 
 markdown: kramdown
-theme: null
+permalink: pretty
 
-collections:
-  sealed:
-    output: true
-    permalink: /corpus/sealed/:path/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 defaults:
   - scope:
@@ -21,8 +23,12 @@ defaults:
       layout: page
 
 exclude:
+  - _admin
+  - .bundle
+  - vendor
   - Gemfile
   - Gemfile.lock
-  - scripts/
+  - scripts
   - README.md
   - RIGHTS.md
+  - SCAFFOLD.md

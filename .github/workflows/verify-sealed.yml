@@ -4,10 +4,26 @@ on:
   pull_request:
     paths:
       - 'corpus/sealed/**'
+      - 'provenance/ledgers/**'
+      - 'provenance/witnesses/**'
+      - 'provenance/seals/**'
+      - '_data/artifact-index.yml'
+      - 'scripts/verify_sealed.py'
+      - '.github/workflows/verify-sealed.yml'
   push:
     branches: [ main ]
     paths:
       - 'corpus/sealed/**'
+      - 'provenance/ledgers/**'
+      - 'provenance/witnesses/**'
+      - 'provenance/seals/**'
+      - '_data/artifact-index.yml'
+      - 'scripts/verify_sealed.py'
+      - '.github/workflows/verify-sealed.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   verify:
@@ -17,5 +33,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run verification
+      - name: Install verifier dependency
+        run: python -m pip install --disable-pip-version-check PyYAML==6.0.2
+      - name: Verify declared SHA-256 hashes
         run: python scripts/verify_sealed.py

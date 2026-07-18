@@ -68,15 +68,9 @@ permalink: /
       <h2 id="lineage-title">Why research became necessary</h2>
       <p>The humanistic corpus does not sit outside the research programme as decoration. It records the sequence by which lived pressure, literary expression, and unresolved philosophical tension reached the limit of what the available bridge could responsibly carry.</p>
     </div>
-    <div class="derivation-chain" aria-label="Humanitas derivation sequence">
-      <span>Lived pressure</span>
-      <span>Literary expression</span>
-      <span>Philosophical tension</span>
-      <span>Attempted bridge</span>
-      <span>Recognized insufficiency</span>
-      <span>Disciplined research</span>
-      <span>PortusSophia™</span>
-    </div>
+    <figure class="derivation-figure">
+      <img src="{{ site.asset_host }}/img/site/humanitas-lineage.png?v={{ site.asset_version }}" alt="Lived pressure leads to literary expression, philosophical tension, an attempted bridge, recognized insufficiency, disciplined research, and PortusSophia.">
+    </figure>
     <p><a href="{{ '/lineage/' | relative_url }}">Trace the lineage from Humanitas to PortusSophia</a></p>
   </div>
 </section>

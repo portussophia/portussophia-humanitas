@@ -83,16 +83,8 @@
 .site-header--shoreline {
   min-height: var(--shoreline-height, clamp(13rem, 27vh, 21rem));
   background-color: var(--ps-navy, #0d1b2a);
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(13, 27, 42, 0.44) 0%,
-      rgba(13, 27, 42, 0.24) 34%,
-      rgba(13, 27, 42, 0.07) 68%,
-      rgba(13, 27, 42, 0.22) 100%
-    ),
-    var(--shoreline-image);
-  background-position: center center, var(--shoreline-position, center 48%);
+  background-image: var(--shoreline-image);
+  background-position: var(--shoreline-position, center 48%);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }

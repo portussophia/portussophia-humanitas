@@ -1,0 +1,30 @@
+{%- assign ps = site.portussophia | default: empty -%}
+{%- assign asset_origin = ps.asset_origin | default: 'https://assets.portussophia.com' -%}
+{%- assign shoreline_image = page.shoreline_image -%}
+{%- unless shoreline_image -%}
+  {%- assign shoreline_image = asset_origin | append: '/img/site/shoreline.jpg' -%}
+{%- endunless -%}
+{%- assign shoreline_position = page.shoreline_position | default: 'center 48%' -%}
+{%- assign shoreline_height = page.shoreline_height | default: 'clamp(13rem, 27vh, 21rem)' -%}
+{%- assign shoreline_horizon = page.shoreline_horizon | default: '36%' -%}
+{%- assign logo_url = ps.identity_logo_url | default: asset_origin | append: '/img/site/logo.png' -%}
+{%- assign logo_alt = ps.identity_logo_alt | default: 'PortusSophia programme mark' -%}
+{%- assign identity_title = ps.identity_title | default: site.title -%}
+{%- assign identity_declaration = ps.identity_declaration | default: site.description -%}
+<header
+  class="site-header site-header--shoreline-identity"
+  role="banner"
+  data-template-version="1.0.0-test"
+  style="--shoreline-image: url('{{ shoreline_image }}'); --shoreline-position: {{ shoreline_position }}; --shoreline-height: {{ shoreline_height }}; --shoreline-horizon: {{ shoreline_horizon }};"
+>
+  <div class="shell shoreline-identity-header-inner">
+    <img class="shoreline-identity-logo" src="{{ logo_url }}" alt="{{ logo_alt | escape }}">
+    <div class="shoreline-identity-copy">
+      <h1 class="shoreline-identity-title">{{ identity_title | escape }}</h1>
+      {%- if identity_declaration -%}
+        <p class="shoreline-identity-declaration">{{ identity_declaration | escape }}</p>
+      {%- endif -%}
+    </div>
+    {%- include anchor-menu.html -%}
+  </div>
+</header>

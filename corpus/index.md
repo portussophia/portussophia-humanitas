@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: shoreline-masthead
 title: Corpus
 permalink: /corpus/
 ---

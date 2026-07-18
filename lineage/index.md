@@ -7,10 +7,6 @@ permalink: /lineage/
 ---
 <div class="lineage-opening">
   <p>PortusHumanitas records continuity. It does not claim that every later distinction already existed in finished form inside the earlier writing.</p>
-
-  <figure class="lineage-figure">
-    <img src="{{ site.asset_host }}/img/site/humanitas-lineage.png?v={{ site.asset_version }}" alt="Lived pressure leads to literary expression, philosophical tension, an attempted bridge, recognized insufficiency, disciplined research, and PortusSophia.">
-  </figure>
 </div>
 
 ## The derivation path

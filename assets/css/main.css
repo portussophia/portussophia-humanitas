@@ -1,8 +1,47 @@
-/* PortusSophia Humanitas — base stylesheet */
-body {
-  font-family: Georgia, 'Times New Roman', serif;
-  margin: 0 auto;
-  max-width: 780px;
-  padding: 2rem 1rem;
-  line-height: 1.6;
+/* PortusHumanitas™ local surface layer.
+ * Shared PortusSophia tokens, base styles, header, navigation, and footer load first.
+ */
+
+.site-main {
+  min-height: 62vh;
+  background: var(--paper, #f1ece3);
+}
+
+.page-shell,
+.home-introduction {
+  width: min(calc(100% - 2.5rem), var(--shell, 76rem));
+  margin-inline: auto;
+}
+
+.page-header {
+  padding-block: clamp(3.25rem, 7vw, 6rem) clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.page-header h1 {
+  max-width: 18ch;
+  margin: 0;
+}
+
+.page-content {
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+.home-introduction {
+  padding-block: clamp(3.5rem, 8vw, 6.5rem);
+}
+
+.home-introduction h2 {
+  margin-top: 0;
+}
+
+.home-introduction p {
+  max-width: 58rem;
+  font-size: clamp(1.08rem, 2vw, 1.28rem);
+}
+
+@media (max-width: 40rem) {
+  .page-shell,
+  .home-introduction {
+    width: min(calc(100% - 1.5rem), var(--shell, 76rem));
+  }
 }

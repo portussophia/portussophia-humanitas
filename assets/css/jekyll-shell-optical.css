@@ -2,6 +2,10 @@
  * Loaded after jekyll-shell-polish.css.
  */
 
+.site-footer.ps-sailcloth {
+  padding-block: 0;
+}
+
 /* The first footer row remains the site-specific context | links grid. */
 .footer-site-band {
   padding: 0;
@@ -25,7 +29,8 @@
 }
 
 .footer-closing .footer-refrain {
-  margin: 0 0 0.1rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
   transform: none;
   font-size: clamp(1.16rem, 1.55vw, 1.42rem);
   line-height: 1.05;

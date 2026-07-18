@@ -7,6 +7,11 @@ provenance/ledgers/** -text
 provenance/witnesses/** -text
 provenance/seals/** -text
 
+# Editorial route pages are site content, not authoritative record objects.
+provenance/ledgers/index.md text eol=lf
+provenance/witnesses/index.md text eol=lf
+provenance/seals/index.md text eol=lf
+
 *.pdf binary
 *.png binary
 *.jpg binary

@@ -1,7 +1,5 @@
 ---
 layout: page
-title: About
+title: About PortusHumanitas™
 permalink: /about/
 ---
-
-# About PortusSophia Humanitas

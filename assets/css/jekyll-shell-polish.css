@@ -1,0 +1,159 @@
+/* PortusSophia™ Jekyll shell polish v1.0.0 test candidate. */
+
+/* Restrained navigation motion. */
+.anchor-menu > summary.menu-trigger svg {
+  transform-origin: 50% 48%;
+  transition: transform 160ms ease;
+}
+
+.anchor-menu > summary.menu-trigger:hover svg,
+.anchor-menu > summary.menu-trigger:focus-visible svg {
+  transform: translateY(-0.08rem) rotate(-4deg) scale(1.035);
+}
+
+.anchor-menu[open] > summary.menu-trigger svg {
+  transform: rotate(4deg);
+}
+
+.anchor-menu-panel .nav-list a {
+  position: relative;
+  background-image: linear-gradient(90deg, rgba(240, 181, 63, 0.12), rgba(240, 181, 63, 0));
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition:
+    background-size 170ms ease,
+    border-color 170ms ease,
+    color 170ms ease,
+    transform 170ms ease;
+}
+
+.anchor-menu-panel .nav-list a:hover,
+.anchor-menu-panel .nav-list a:focus-visible {
+  border-left-color: var(--ps-gold, #f0b53f);
+  background-size: 100% 100%;
+  color: var(--ps-navy, #0d1b2a);
+  transform: translateX(0.28rem);
+}
+
+.anchor-menu-panel .nav-list a[aria-current="page"] {
+  border-left-color: var(--ps-gold, #f0b53f);
+  background-size: 42% 100%;
+  font-weight: 720;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anchor-menu > summary.menu-trigger svg,
+  .anchor-menu-panel .nav-list a {
+    transition: none;
+  }
+
+  .anchor-menu > summary.menu-trigger:hover svg,
+  .anchor-menu > summary.menu-trigger:focus-visible svg,
+  .anchor-menu[open] > summary.menu-trigger svg,
+  .anchor-menu-panel .nav-list a:hover,
+  .anchor-menu-panel .nav-list a:focus-visible {
+    transform: none;
+  }
+}
+
+/* Three stacked footer bands. */
+.footer-inner {
+  padding-block: 0;
+}
+
+.footer-band {
+  width: 100%;
+}
+
+.footer-band + .footer-band {
+  border-top: 1px solid rgba(204, 204, 204, 0.28);
+}
+
+.footer-refrain-band {
+  padding-block: clamp(2rem, 4vw, 3.25rem);
+}
+
+.footer-refrain {
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  font-size: clamp(1.7rem, 3.4vw, 2.65rem);
+}
+
+.footer-site-band {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.footer-directory {
+  display: block;
+}
+
+.footer-identity {
+  text-align: center;
+}
+
+.footer-name,
+.footer-role {
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+.footer-name {
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+}
+
+.footer-role {
+  margin-top: 0.55rem;
+}
+
+.footer-panels {
+  width: min(100%, 64rem);
+  margin: clamp(2rem, 4vw, 3rem) auto 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.footer-panel {
+  justify-items: center;
+}
+
+.footer-panel a {
+  text-underline-offset: 0.22em;
+}
+
+.footer-rights-band {
+  padding-block: 1.25rem 1.5rem;
+}
+
+.footer-rights {
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+  text-align: center;
+}
+
+.footer-rights a::before {
+  content: "·";
+  margin-right: 1rem;
+  color: var(--ps-mgrey, #888888);
+  text-decoration: none;
+}
+
+@media (max-width: 52rem) {
+  .footer-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-rights {
+    display: grid;
+    justify-items: center;
+  }
+
+  .footer-rights a::before {
+    content: none;
+  }
+}

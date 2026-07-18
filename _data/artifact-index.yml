@@ -1,3 +1,18 @@
-# Machine-readable index of sealed artifacts.
-# Populate as artifacts are added to corpus/sealed/*
+# Routing index for public artifacts already sealed elsewhere.
+#
+# This file is not a release record and does not create new authority.
+# Each entry points to the existing sealed file and its established provenance.
+# The verification workflow compares expected_sha256 with the file bytes.
+#
+# Example:
+# - id: stable-artifact-id
+#   title: "Artifact title"
+#   standing: "sealed"
+#   public_path: /corpus/example/
+#   sealed_file: /corpus/sealed/example/artifact.md
+#   ledger_reference: /provenance/ledgers/example-ledger.txt
+#   witness_reference: /provenance/witnesses/example-witness.txt
+#   seal_reference: /provenance/seals/example-seal.txt
+#   expected_sha256: 64-lowercase-hex-characters
+
 artifacts: []

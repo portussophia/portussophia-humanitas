@@ -1,0 +1,322 @@
+/* PortusSophia™ Jekyll shell v1.0.0 test candidate.
+ * Remove this local copy after the shared shell is merged and adopted by URL.
+ */
+
+.site-header {
+  position: relative;
+  z-index: 20;
+  border-top: 0;
+  border-bottom: 0.18rem solid var(--ps-gold, #f0b53f);
+  background-color: var(--ps-navy, #0d1b2a);
+  background-image: var(--ps-sailcloth-navy);
+  background-repeat: repeat;
+  background-size: 6px 6px;
+}
+
+.header-inner {
+  min-height: 5.25rem;
+}
+
+.site-header .site-identity,
+.site-header .site-name {
+  color: var(--parchment, #faf8f5);
+}
+
+.site-header .site-role {
+  color: var(--ps-grey, #cccccc);
+}
+
+.identity-header-inner {
+  display: grid;
+  grid-template-columns: minmax(7rem, 9rem) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  min-height: clamp(18rem, 26vw, 22rem);
+  padding-block: clamp(2.75rem, 6vw, 4.75rem);
+}
+
+.identity-header-logo {
+  display: block;
+  width: clamp(7rem, 10vw, 9rem);
+  height: auto;
+  margin: 0;
+}
+
+.identity-header-copy {
+  min-width: 0;
+  transform: translateY(-0.65rem);
+}
+
+.identity-title-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 3.25rem;
+  align-items: start;
+  gap: clamp(1rem, 2vw, 1.75rem);
+}
+
+.identity-header-title {
+  max-width: none;
+  margin: 0;
+  color: var(--parchment, #faf8f5);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 720;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+
+.identity-header-declaration {
+  max-width: 46rem;
+  margin: clamp(1rem, 2vw, 1.4rem) 0 0;
+  color: var(--parchment, #faf8f5);
+  font-family: var(--serif, Georgia, serif);
+  font-size: clamp(1.12rem, 2.15vw, 1.55rem);
+  line-height: 1.45;
+}
+
+.identity-title-row .anchor-menu {
+  align-self: start;
+  margin-top: -0.35rem;
+}
+
+.anchor-menu {
+  position: relative;
+  margin-left: auto;
+}
+
+.anchor-menu > summary.menu-trigger {
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  color: var(--ps-gold, #f0b53f);
+  cursor: pointer;
+  list-style: none;
+}
+
+.anchor-menu > summary.menu-trigger::-webkit-details-marker {
+  display: none;
+}
+
+.anchor-menu > summary.menu-trigger::marker {
+  content: "";
+}
+
+.home-anchor svg {
+  width: 2.35rem;
+  height: 2.35rem;
+}
+
+.anchor-menu > summary.menu-trigger:hover,
+.anchor-menu > summary.menu-trigger:focus-visible {
+  color: var(--parchment, #faf8f5);
+}
+
+.anchor-menu-panel {
+  position: absolute;
+  top: calc(100% + 0.55rem);
+  right: 0;
+  z-index: 30;
+  min-width: 18rem;
+  padding: 0.65rem;
+  border: 1px solid var(--rule, #cccccc);
+  background: var(--paper, #f1ece3);
+  box-shadow: 0 1rem 2rem rgba(13, 27, 42, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-0.35rem);
+  transition: opacity 120ms ease, transform 120ms ease, visibility 120ms ease;
+}
+
+.anchor-menu[open] .anchor-menu-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.anchor-menu-panel .nav-list {
+  display: block;
+}
+
+.anchor-menu-panel .nav-list a {
+  display: block;
+  padding: 0.72rem 0.78rem;
+  border: 0;
+  border-left: 2px solid transparent;
+  color: var(--ps-navy, #0d1b2a);
+  white-space: normal;
+}
+
+.anchor-menu-panel .nav-list a:hover,
+.anchor-menu-panel .nav-list a[aria-current="page"] {
+  border-left-color: var(--ps-gold, #f0b53f);
+  color: var(--ps-navy, #0d1b2a);
+}
+
+.anchor-menu-panel .nav-home {
+  margin: 0 0 0.45rem;
+  padding: 0 0 0.45rem;
+  border-bottom: 1px solid var(--rule, #cccccc);
+}
+
+.anchor-menu-panel .related-surface {
+  margin: 0.45rem 0 0;
+  padding: 0.45rem 0 0;
+  border-top: 1px solid var(--rule, #cccccc);
+  border-left: 0;
+}
+
+.site-footer {
+  border-top: 0.18rem solid var(--ps-gold, #f0b53f);
+  background-color: var(--ps-navy, #0d1b2a);
+  color: var(--parchment, #faf8f5);
+}
+
+.footer-inner {
+  padding-block: clamp(2.5rem, 6vw, 4.5rem) 1.5rem;
+}
+
+.footer-refrain {
+  max-width: none;
+  margin: 0 0 clamp(2rem, 4vw, 3rem);
+  color: var(--ps-gold, #f0b53f);
+  font-family: var(--serif, Georgia, serif);
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  line-height: 1.2;
+}
+
+.footer-directory {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.9fr) minmax(0, 2fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.footer-name,
+.footer-role {
+  max-width: 32rem;
+}
+
+.footer-name {
+  margin: 0;
+  color: var(--parchment, #faf8f5);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-weight: 720;
+}
+
+.footer-role {
+  margin-top: 0.45rem;
+  color: var(--ps-grey, #cccccc);
+}
+
+.footer-panels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.footer-panel {
+  display: grid;
+  align-content: start;
+  gap: 0.4rem;
+}
+
+.footer-panel-label {
+  margin-bottom: 0.3rem;
+  color: var(--ps-gold, #f0b53f);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.74rem;
+  font-weight: 740;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-panel a,
+.footer-rights a {
+  color: var(--parchment, #faf8f5);
+}
+
+.footer-panel a:hover,
+.footer-rights a:hover {
+  color: var(--ps-gold, #f0b53f);
+}
+
+.footer-rights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.65rem 1.25rem;
+  margin-top: clamp(2rem, 5vw, 4rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(204, 204, 204, 0.35);
+  color: var(--ps-grey, #cccccc);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 52rem) {
+  .identity-header-inner {
+    grid-template-columns: minmax(6rem, 7.5rem) minmax(0, 1fr);
+    min-height: 16rem;
+  }
+
+  .identity-header-title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .footer-directory,
+  .footer-panels {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 40rem) {
+  .identity-header-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    min-height: 0;
+    padding-block: 2.25rem 2.75rem;
+  }
+
+  .identity-header-logo {
+    width: 6.5rem;
+  }
+
+  .identity-header-copy {
+    transform: none;
+  }
+
+  .identity-header-title {
+    font-size: clamp(2.4rem, 12vw, 3.4rem);
+  }
+}
+
+@media (max-width: 25rem) {
+  .header-inner {
+    min-height: 4.75rem;
+  }
+
+  .anchor-menu-panel {
+    position: fixed;
+    top: 5rem;
+    right: 0.75rem;
+    left: 0.75rem;
+    min-width: 0;
+  }
+}
+
+@media print {
+  .site-header,
+  .site-footer {
+    background-image: none;
+  }
+
+  .anchor-menu {
+    display: none;
+  }
+}

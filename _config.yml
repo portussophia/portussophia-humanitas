@@ -1,0 +1,28 @@
+title: PortusSophia Humanitas
+description: >-
+  Public corpus and provenance record for the PortusSophia philosophy-of-science
+  research program.
+baseurl: ""
+url: ""
+
+markdown: kramdown
+theme: null
+
+collections:
+  sealed:
+    output: true
+    permalink: /corpus/sealed/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - README.md
+  - RIGHTS.md

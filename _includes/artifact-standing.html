@@ -1,0 +1,9 @@
+{% comment %}
+  Renders the current standing (draft / witnessed / sealed) of an artifact,
+  driven by page front matter (e.g. page.standing).
+{% endcomment %}
+{% if page.standing %}
+<div class="artifact-standing artifact-standing--{{ page.standing }}">
+  Standing: {{ page.standing }}
+</div>
+{% endif %}

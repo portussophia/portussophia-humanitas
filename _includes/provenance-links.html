@@ -1,0 +1,9 @@
+{% comment %}
+  Renders links to related provenance records (ledger entry, witness record,
+  seal), driven by page front matter.
+{% endcomment %}
+<div class="provenance-links">
+  {% if page.ledger %}<a href="{{ page.ledger | relative_url }}">Ledger</a>{% endif %}
+  {% if page.witness %}<a href="{{ page.witness | relative_url }}">Witness</a>{% endif %}
+  {% if page.seal %}<a href="{{ page.seal | relative_url }}">Seal</a>{% endif %}
+</div>

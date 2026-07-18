@@ -1,0 +1,3 @@
+# Machine-readable index of sealed artifacts.
+# Populate as artifacts are added to corpus/sealed/*
+artifacts: []

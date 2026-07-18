@@ -9,6 +9,9 @@
     {%- endif -%}
     <li><a href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
   {%- endfor -%}
+  <li class="nav-related-divider" aria-hidden="true"></li>
+  <li class="related-surface"><a href="https://public.portussophia.com" class="is-external">PortusSophia Public</a></li>
+  <li class="related-surface"><a href="https://founder.portussophia.com" class="is-external">Founder</a></li>
 {%- endcapture -%}
 <header class="site-header site-header--overlay is-overlay" role="banner">
   <div class="shell header-inner">

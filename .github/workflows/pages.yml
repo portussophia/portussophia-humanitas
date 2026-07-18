@@ -3,6 +3,7 @@ name: Build and Deploy Jekyll Site
 on:
   push:
     branches: [ main ]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -11,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: "pages-${{ github.ref }}"
   cancel-in-progress: true
 
 jobs:
@@ -24,12 +25,15 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
       - name: Build with Jekyll
-        run: bundle exec jekyll build --destination ./_site
-      - uses: actions/upload-pages-artifact@v3
+        run: bundle exec jekyll build --trace --destination ./_site
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

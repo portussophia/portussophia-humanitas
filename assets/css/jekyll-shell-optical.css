@@ -2,6 +2,13 @@
  * Loaded after jekyll-shell-polish.css.
  */
 
+/* Compact masthead shares the same horizontal registration as page and footer shells. */
+.site-header--compact .header-inner {
+  width: min(calc(100% - 2.5rem), var(--shell, 76rem));
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
 .site-footer.ps-sailcloth {
   padding-block: 0;
 }
@@ -56,6 +63,12 @@
 .footer-rights-link:hover,
 .footer-rights-link:focus-visible {
   color: var(--ps-gold, #f0b53f);
+}
+
+@media (max-width: 40rem) {
+  .site-header--compact .header-inner {
+    width: min(calc(100% - 1.5rem), var(--shell, 76rem));
+  }
 }
 
 @media (max-width: 34rem) {

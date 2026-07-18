@@ -1,0 +1,10 @@
+{%- assign ps = site.portussophia -%}
+<header class="site-header site-header--compact ps-sailcloth" role="banner" data-template-version="1.0.0-test">
+  <div class="shell header-inner">
+    <a class="site-identity" href="{{ '/' | relative_url }}">
+      <span class="site-name">{{ ps.header_label | default: site.title | escape }}</span>
+      {%- if ps.header_role -%}<span class="site-role">{{ ps.header_role | escape }}</span>{%- endif -%}
+    </a>
+    {%- include anchor-menu.html -%}
+  </div>
+</header>

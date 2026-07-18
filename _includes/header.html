@@ -1,5 +1,7 @@
 {%- assign header_variant = page.header_variant | default: 'compact' -%}
-{%- if page.layout == 'home' and page.header_variant == nil -%}
+{%- if page.layout == 'shoreline-home' and page.header_variant == nil -%}
+  {%- assign header_variant = 'shoreline-identity' -%}
+{%- elsif page.layout == 'home' and page.header_variant == nil -%}
   {%- assign header_variant = 'identity' -%}
 {%- elsif page.layout == 'shoreline-masthead' and page.header_variant == nil -%}
   {%- assign header_variant = 'shoreline' -%}

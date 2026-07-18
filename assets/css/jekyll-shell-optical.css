@@ -2,51 +2,59 @@
  * Loaded after jekyll-shell-polish.css.
  */
 
-.footer-refrain-band {
-  block-size: 2.4rem;
-}
-
-.footer-refrain-band .shell {
-  block-size: 100%;
-  min-height: 0;
-}
-
-.footer-refrain {
-  transform: none;
-}
-
-.footer-rights-band {
-  block-size: 2.2rem;
+/* The first footer row remains the site-specific context | links grid. */
+.footer-site-band {
   padding: 0;
 }
 
-.footer-rights {
+/* The second row is one centered three-line closing stack. */
+.footer-closing-band {
+  padding: 0;
+}
+
+.footer-closing {
   display: grid;
-  block-size: 100%;
-  min-height: 0;
-  align-content: center;
   justify-items: center;
-  gap: 0;
-  padding: 0;
+  gap: 0.06rem;
+  padding-block: 0.48rem 0.38rem;
+  text-align: center;
 }
 
-.footer-rights span,
-.footer-rights a {
+.footer-closing .footer-refrain {
+  margin: 0 0 0.1rem;
+  transform: none;
+  font-size: clamp(1.16rem, 1.55vw, 1.42rem);
   line-height: 1.05;
 }
 
+.footer-copyright {
+  max-width: none;
+  margin: 0;
+  color: var(--ps-grey, #cccccc);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.72rem;
+  line-height: 1.08;
+}
+
+.footer-rights-link {
+  color: var(--parchment, #faf8f5);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.72rem;
+  line-height: 1.08;
+  text-underline-offset: 0.18em;
+}
+
+.footer-rights-link:hover,
+.footer-rights-link:focus-visible {
+  color: var(--ps-gold, #f0b53f);
+}
+
 @media (max-width: 34rem) {
-  .footer-refrain-band,
-  .footer-rights-band {
-    block-size: auto;
+  .footer-closing {
+    padding-block: 0.55rem 0.48rem;
   }
 
-  .footer-refrain-band .shell {
-    min-height: 2.4rem;
-  }
-
-  .footer-rights {
-    block-size: auto;
-    padding-block: 0.25rem;
+  .footer-copyright {
+    max-width: 30rem;
   }
 }

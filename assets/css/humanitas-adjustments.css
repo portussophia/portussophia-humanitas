@@ -65,6 +65,13 @@
   height: auto;
 }
 
+.site-main {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   display: block;
   width: 100%;
@@ -74,8 +81,9 @@
 }
 
 .page-header--navy {
-  width: 100%;
-  margin: 0;
+  width: 100vw;
+  max-width: none;
+  margin: 0 calc(50% - 50vw);
   padding: clamp(4.75rem, 6vw, 5.5rem) 0 clamp(2rem, 4vw, 3rem);
   border-bottom: 1px solid rgba(204, 204, 204, 0.28);
   background-color: var(--navy);
@@ -83,6 +91,10 @@
   background-repeat: repeat;
   background-size: 6px 6px;
   color: var(--parchment);
+}
+
+.page-header--navy > .shell {
+  margin-inline: auto;
 }
 
 .page-header--navy .eyebrow {
@@ -101,6 +113,7 @@
 }
 
 .page-content {
+  margin-inline: auto;
   padding-block: clamp(2rem, 4vw, 3.25rem);
 }
 

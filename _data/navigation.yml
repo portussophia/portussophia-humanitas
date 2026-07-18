@@ -1,7 +1,3 @@
-- title: Home
-  url: /
-- title: About
-  url: /about/
 - title: Corpus
   url: /corpus/
 - title: Phrases
@@ -10,3 +6,5 @@
   url: /provenance/
 - title: Lineage
   url: /lineage/
+- title: About
+  url: /about/

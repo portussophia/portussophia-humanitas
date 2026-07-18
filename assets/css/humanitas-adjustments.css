@@ -55,20 +55,56 @@
   font-size: clamp(2.65rem, 6vw, 4.45rem);
 }
 
-.derivation-figure,
-.lineage-figure {
+.derivation-figure {
   margin: 2rem 0 1.5rem;
 }
 
-.derivation-figure img,
-.lineage-figure img {
+.derivation-figure img {
   display: block;
   width: 100%;
   height: auto;
 }
 
+.page {
+  padding: 0;
+}
+
+.page-header--navy {
+  margin: 0;
+  padding: clamp(4.75rem, 6vw, 5.5rem) 0 clamp(2rem, 4vw, 3rem);
+  border-bottom: 1px solid rgba(204, 204, 204, 0.28);
+  background-color: var(--navy);
+  background-image: var(--ps-sailcloth-navy);
+  background-repeat: repeat;
+  background-size: 6px 6px;
+  color: var(--parchment);
+}
+
+.page-header--navy .eyebrow {
+  color: var(--gold);
+}
+
+.page-header--navy h1 {
+  max-width: 18ch;
+  color: var(--parchment);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+}
+
+.page-header--navy .page-intro {
+  max-width: 48rem;
+  color: var(--rule);
+}
+
+.page-content {
+  padding-block: clamp(2rem, 4vw, 3.25rem);
+}
+
+.page-content h2 {
+  margin-top: 2rem;
+}
+
 .lineage-opening {
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.75rem;
 }
 
 .lineage-opening > p {
@@ -80,7 +116,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin: 1.5rem 0 2.75rem;
+  margin: 1.25rem 0 2.25rem;
 }
 
 .lineage-steps article {
@@ -140,15 +176,22 @@
     font-size: clamp(2.35rem, 12vw, 3.7rem);
   }
 
-  .derivation-figure,
-  .lineage-figure {
+  .derivation-figure {
     margin-top: 1.5rem;
     overflow-x: auto;
   }
 
-  .derivation-figure img,
-  .lineage-figure img {
+  .derivation-figure img {
     min-width: 52rem;
+  }
+
+  .page-header--navy {
+    padding-top: 4.25rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .page-content {
+    padding-block: 1.75rem 2.5rem;
   }
 
   .lineage-steps {

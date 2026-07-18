@@ -23,8 +23,12 @@ Editorial pages do not inherit the standing of the sealed artifact they introduc
 
 ## Local build
 
+This repository uses the existing Ruby and Jekyll installation managed at the parent workspace level.
+
+From the repository root:
+
 ```bash
-bundle install
+bundle check
 bundle exec jekyll serve
 ```
 
@@ -36,9 +40,25 @@ For a production build:
 bundle exec jekyll build --trace
 ```
 
+Run `bundle install` only when the Gemfile, lockfile, Ruby version, or installed dependency set changes.
+
+## Deployment
+
+GitHub Pages deploys from the `main` branch at the repository root. No repository-level Ruby-installation workflow is required.
+
+## Shared assets
+
+The PortusSophia family stylesheet is loaded from:
+
+`https://assets.portussophia.com/styles/v1/site.css`
+
+Humanitas then applies its own local literary and provenance stylesheet from `assets/css/main.css`.
+
 ## Sealed artifact verification
 
 Each sealed artifact must be registered in `_data/artifact-index.yml` with its existing SHA-256 digest.
+
+Verification remains a local operation until the public sealed corpus is introduced:
 
 ```bash
 python -m pip install PyYAML==6.0.2

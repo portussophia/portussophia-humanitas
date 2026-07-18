@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
   {% feed_meta %}
+  <link rel="stylesheet" href="{{ site.asset_host }}/styles/v1/site.css?v={{ site.asset_version }}">
+  <link rel="stylesheet" href="{{ site.asset_host }}/styles/v1/background-sailcloth.css?v={{ site.asset_version }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.asset_version }}">
 </head>
 <body class="{% if page.layout %}layout-{{ page.layout }}{% endif %}">

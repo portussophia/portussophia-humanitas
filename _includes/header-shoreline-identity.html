@@ -7,7 +7,10 @@
 {%- assign shoreline_position = page.shoreline_position | default: 'center 48%' -%}
 {%- assign shoreline_height = page.shoreline_height | default: 'clamp(13rem, 27vh, 21rem)' -%}
 {%- assign shoreline_horizon = page.shoreline_horizon | default: '36%' -%}
-{%- assign logo_url = ps.identity_logo_url | default: asset_origin | append: '/img/site/logo.png' -%}
+{%- assign logo_url = ps.identity_logo_url -%}
+{%- unless logo_url -%}
+  {%- assign logo_url = asset_origin | append: '/img/site/logo.png' -%}
+{%- endunless -%}
 {%- assign logo_alt = ps.identity_logo_alt | default: 'PortusSophia programme mark' -%}
 {%- assign identity_title = ps.identity_title | default: site.title -%}
 {%- assign identity_declaration = ps.identity_declaration | default: site.description -%}

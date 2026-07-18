@@ -51,8 +51,18 @@
 }
 
 .home-hero h1 {
-  font-size: clamp(2.65rem, 6vw, 4.45rem);
   max-width: 16ch;
+  font-size: clamp(2.65rem, 6vw, 4.45rem);
+}
+
+.derivation-figure {
+  margin: 2rem 0 1.5rem;
+}
+
+.derivation-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .footer-title {
@@ -77,5 +87,14 @@
 
   .home-hero h1 {
     font-size: clamp(2.35rem, 12vw, 3.7rem);
+  }
+
+  .derivation-figure {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+  }
+
+  .derivation-figure img {
+    min-width: 52rem;
   }
 }

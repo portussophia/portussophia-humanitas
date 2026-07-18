@@ -4,11 +4,12 @@ description: >-
 url: "https://humanitas.portussophia.com"
 baseurl: ""
 lang: en
+author: "James Roy Dennis"
 
 portussophia:
-  template_version: "1.0.0-test"
+  template_version: "1.0.0"
   asset_origin: "https://assets.portussophia.com"
-  asset_version: "20260718-2"
+  asset_version: "20260718-3"
 
   header_label: "PortusHumanitas™"
   header_role: "A Harbor of Inquiry"
@@ -29,11 +30,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-collections:
-  sealed:
-    output: true
-    permalink: /corpus/sealed/:path/
-
 defaults:
   - scope:
       path: ""
@@ -42,7 +38,12 @@ defaults:
       layout: page
 
 exclude:
+  - _admin
+  - .bundle
+  - vendor
   - Gemfile
   - Gemfile.lock
-  - scripts/
+  - scripts
   - README.md
+  - RIGHTS.md
+  - SCAFFOLD.md

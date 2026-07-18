@@ -43,6 +43,85 @@
   font-size: clamp(1.08rem, 2vw, 1.28rem);
 }
 
+/* Humanitas content recovered from the initial scaffold.
+ * These rules are deliberately scoped beneath the approved shoreline shell.
+ */
+.eyebrow {
+  margin: 0 0 0.55rem;
+  color: var(--ps-gold, #f0b53f);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.home-epigraph {
+  max-width: 34rem;
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+  border-left: 0.18rem solid var(--ps-gold, #f0b53f);
+  color: var(--parchment, #faf8f5);
+  font-family: var(--serif, Georgia, serif);
+  font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+  font-style: italic;
+}
+
+.home-lede {
+  margin-top: 0;
+  font-family: var(--serif, Georgia, serif);
+}
+
+.home-section + .home-section {
+  margin-top: clamp(2.75rem, 6vw, 5rem);
+  padding-top: clamp(2.25rem, 4vw, 3.5rem);
+  border-top: 1px solid rgba(250, 248, 245, 0.2);
+}
+
+.standing-panel,
+.path-grid,
+.lineage-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.standing-panel > div,
+.path-card,
+.lineage-steps article {
+  padding: clamp(1rem, 2vw, 1.35rem);
+  border: 1px solid rgba(250, 248, 245, 0.24);
+  background: rgba(250, 248, 245, 0.04);
+}
+
+.standing-panel p,
+.path-card p,
+.lineage-steps p {
+  font-size: 1rem;
+}
+
+.path-card h3,
+.lineage-steps h3 {
+  margin-top: 0;
+}
+
+.lineage-opening {
+  max-width: 58rem;
+  padding-left: 1rem;
+  border-left: 0.18rem solid var(--ps-gold, #f0b53f);
+}
+
+.lineage-steps article > span {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--ps-gold, #f0b53f);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
 @media (max-width: 40rem) {
   .page-shell,
   .home-introduction {

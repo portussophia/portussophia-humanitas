@@ -1,4 +1,19 @@
 * text=auto eol=lf
+
+# Sealed public artifacts and their authoritative provenance records must
+# remain byte-identical. Do not normalize line endings in these paths.
+corpus/sealed/** -text
+provenance/ledgers/** -text
+provenance/witnesses/** -text
+provenance/seals/** -text
+
+# Editorial route pages are site content, not authoritative record objects.
+provenance/ledgers/index.md text eol=lf
+provenance/witnesses/index.md text eol=lf
+provenance/seals/index.md text eol=lf
+
 *.pdf binary
 *.png binary
 *.jpg binary
+*.jpeg binary
+*.webp binary

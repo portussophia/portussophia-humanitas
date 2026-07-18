@@ -1,7 +1,13 @@
 cff-version: 1.2.0
 message: "If you use or reference this work, please cite it as below."
-title: "PortusSophia Humanitas"
+title: "PortusHumanitas™"
 authors:
   - family-names: "Dennis"
     given-names: "James Roy"
+abstract: >-
+  The public reading and provenance surface for the governed humanistic
+  corpus from which the later PortusSophia™ research architecture became
+  necessary.
 date-released: 2026-07-17
+url: "https://humanitas.portussophia.com"
+repository-code: "https://github.com/portussophia/portussophia-humanitas"

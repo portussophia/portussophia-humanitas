@@ -1,8 +1,10 @@
-<header>
-  <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-  <nav>
-    {% for item in site.data.navigation %}
-      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-    {% endfor %}
-  </nav>
-</header>
+{%- assign header_variant = page.header_variant | default: 'compact' -%}
+{%- if page.layout == 'home' and page.header_variant == nil -%}
+  {%- assign header_variant = 'identity' -%}
+{%- endif -%}
+
+{%- if header_variant == 'identity' -%}
+  {%- include header-identity.html -%}
+{%- else -%}
+  {%- include header-compact.html -%}
+{%- endif -%}

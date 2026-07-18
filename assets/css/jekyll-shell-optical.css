@@ -163,6 +163,16 @@
   filter: drop-shadow(0 1px 0 rgba(13, 27, 42, 0.8)) drop-shadow(0 2px 0.5rem rgba(13, 27, 42, 0.65));
 }
 
+/* Shoreline navigation inverts the complete row on hover or keyboard focus. */
+.site-header--shoreline .anchor-menu-panel .nav-list li:hover > a,
+.site-header--shoreline .anchor-menu-panel .nav-list a:focus-visible,
+.site-header--shoreline-identity .anchor-menu-panel .nav-list li:hover > a,
+.site-header--shoreline-identity .anchor-menu-panel .nav-list a:focus-visible {
+  border-left-color: var(--ps-gold, #f0b53f);
+  background-color: var(--ps-dark, #1a1a2e);
+  color: var(--parchment, #faf8f5);
+}
+
 .shoreline-content,
 .shoreline-masthead-content {
   background-color: var(--ps-navy, #0d1b2a);

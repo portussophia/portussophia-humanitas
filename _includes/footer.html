@@ -8,32 +8,36 @@
   {%- assign copyright_year = site.time | date: '%Y' -%}
 {%- endunless -%}
 <footer class="site-footer ps-sailcloth">
-  <div class="shell footer-inner{% if page.footer_quiet %} is-quiet{% endif %}">
-    <p class="footer-refrain"><em>{{ footer.refrain | default: 'Here and Now!' | escape }}</em></p>
+  <div class="footer-band footer-refrain-band">
+    <div class="shell">
+      <p class="footer-refrain"><em>{{ footer.refrain | default: 'Here and Now!' | escape }}</em></p>
+    </div>
+  </div>
 
-    <div class="footer-directory">
+  <div class="footer-band footer-site-band">
+    <div class="shell footer-directory">
       <div class="footer-identity">
         <p class="footer-name">{{ footer.identity.name | default: site.title | escape }}</p>
         {%- if footer.identity.role -%}<p class="footer-role">{{ footer.identity.role | escape }}</p>{%- endif -%}
       </div>
 
-      {% unless page.footer_quiet %}
-        {%- if footer.panels -%}
-          <nav class="footer-panels" aria-label="Footer navigation">
-            {%- for panel in footer.panels -%}
-              <div class="footer-panel">
-                <span class="footer-panel-label">{{ panel.label | escape }}</span>
-                {%- for link in panel.links -%}
-                  <a href="{{ link.url }}"{% if link.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.label | escape }}</a>
-                {%- endfor -%}
-              </div>
-            {%- endfor -%}
-          </nav>
-        {%- endif -%}
-      {% endunless %}
+      {%- if footer.panels -%}
+        <nav class="footer-panels" aria-label="Site footer navigation">
+          {%- for panel in footer.panels -%}
+            <div class="footer-panel">
+              <span class="footer-panel-label">{{ panel.label | escape }}</span>
+              {%- for link in panel.links -%}
+                <a href="{{ link.url }}"{% if link.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.label | escape }}</a>
+              {%- endfor -%}
+            </div>
+          {%- endfor -%}
+        </nav>
+      {%- endif -%}
     </div>
+  </div>
 
-    <div class="footer-rights">
+  <div class="footer-band footer-rights-band">
+    <div class="shell footer-rights">
       <span>Copyright © {{ copyright_year }} {{ copyright_owner | escape }}. All rights reserved.</span>
       <a href="{{ rights_url | relative_url }}">{{ rights_label | escape }}</a>
     </div>

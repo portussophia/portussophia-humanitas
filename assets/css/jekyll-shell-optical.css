@@ -24,6 +24,10 @@
   color: var(--parchment, #faf8f5);
 }
 
+.home-page .home-introduction h2 {
+  color: var(--parchment, #faf8f5);
+}
+
 .site-footer.ps-sailcloth {
   padding-block: 0;
 }
@@ -118,6 +122,10 @@
 .site-header--shoreline .site-name,
 .site-header--shoreline .site-role {
   text-shadow: 0 1px 0 rgba(13, 27, 42, 0.8), 0 2px 0.8rem rgba(13, 27, 42, 0.7);
+}
+
+.site-header--shoreline .site-role {
+  color: var(--ps-dark, #1a1a2e);
 }
 
 .site-header--shoreline .anchor-menu > summary.menu-trigger {

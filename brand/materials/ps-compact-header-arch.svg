@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" role="img" aria-labelledby="title desc">
+  <title id="title">PortusSophia compact header arch embellishment</title>
+  <desc id="desc">A restrained open arch and copper threshold derived from the supporting Structura geometry.</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 32V18C5 10.8 9.9 6 16 6s11 4.8 11 12v14" stroke="#F0B53F" stroke-width="3"/>
+    <path d="M5 32h22" stroke="#8F6B4D" stroke-width="2"/>
+    <path d="M16 6v7" stroke="#FAF8F5" stroke-width="2"/>
+  </g>
+</svg>

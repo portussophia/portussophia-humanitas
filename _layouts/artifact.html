@@ -1,9 +1,14 @@
 ---
 layout: default
 ---
-<article class="artifact">
-  <h1>{{ page.title }}</h1>
-  {% include artifact-standing.html %}
-  {{ content }}
+<article class="artifact shell reading-shell">
+  <header class="page-header artifact-header">
+    <p class="eyebrow">Sealed public artifact</p>
+    <h1>{{ page.title }}</h1>
+    {% include artifact-standing.html %}
+  </header>
+  <div class="page-content artifact-content">
+    {{ content }}
+  </div>
   {% include provenance-links.html %}
 </article>

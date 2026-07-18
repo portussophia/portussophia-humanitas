@@ -118,6 +118,29 @@
   align-items: start;
 }
 
+.site-header--shoreline .shoreline-site-lockup {
+  display: grid;
+  width: fit-content;
+  min-width: 0;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(0.8rem, 1.5vw, 1.15rem);
+}
+
+.shoreline-programme-mark {
+  display: block;
+  width: clamp(2.9rem, 4vw, 3.6rem);
+  height: auto;
+  filter: drop-shadow(0 1px 0 rgba(13, 27, 42, 0.55)) drop-shadow(0 0.25rem 0.55rem rgba(13, 27, 42, 0.28));
+}
+
+.shoreline-site-copy {
+  display: grid;
+  min-width: 0;
+  align-content: center;
+  gap: 0.05rem;
+}
+
 .site-header--shoreline .site-identity,
 .site-header--shoreline .site-name,
 .site-header--shoreline .site-role {
@@ -196,6 +219,22 @@
   .shoreline-view,
   .site-header--shoreline {
     background-size: cover;
+  }
+
+  .site-header--shoreline .shoreline-site-lockup {
+    gap: 0.65rem;
+  }
+
+  .shoreline-programme-mark {
+    width: 2.4rem;
+  }
+
+  .site-header--shoreline .site-name {
+    font-size: clamp(1.35rem, 6.5vw, 1.7rem);
+  }
+
+  .site-header--shoreline .site-role {
+    font-size: clamp(0.82rem, 4vw, 1rem);
   }
 
   .shoreline-content-inner {

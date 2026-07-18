@@ -57,7 +57,7 @@
   }
 }
 
-/* Three stacked footer bands. */
+/* Three compact stacked footer bands. */
 .footer-inner {
   padding-block: 0;
 }
@@ -71,52 +71,55 @@
 }
 
 .footer-refrain-band {
-  padding-block: clamp(2rem, 4vw, 3.25rem);
+  padding-block: clamp(1.1rem, 2.2vw, 1.65rem);
 }
 
 .footer-refrain {
   margin: 0;
   text-align: center;
   white-space: nowrap;
-  font-size: clamp(1.7rem, 3.4vw, 2.65rem);
+  font-size: clamp(1.35rem, 2.35vw, 1.95rem);
 }
 
 .footer-site-band {
-  padding-block: clamp(2.5rem, 5vw, 4rem);
+  padding-block: clamp(1.5rem, 3vw, 2.35rem);
 }
 
 .footer-directory {
-  display: block;
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.8fr) minmax(0, 2fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
 }
 
 .footer-identity {
-  text-align: center;
+  text-align: left;
 }
 
 .footer-name,
 .footer-role {
-  max-width: 48rem;
-  margin-inline: auto;
+  max-width: 26rem;
+  margin-inline: 0;
 }
 
 .footer-name {
-  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  font-size: clamp(1rem, 1.35vw, 1.18rem);
 }
 
 .footer-role {
-  margin-top: 0.55rem;
+  margin-top: 0.4rem;
 }
 
 .footer-panels {
-  width: min(100%, 64rem);
-  margin: clamp(2rem, 4vw, 3rem) auto 0;
+  width: 100%;
+  margin: 0;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.5rem, 4vw, 3rem);
-  text-align: center;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  text-align: left;
 }
 
 .footer-panel {
-  justify-items: center;
+  justify-items: start;
 }
 
 .footer-panel a {
@@ -124,12 +127,12 @@
 }
 
 .footer-rights-band {
-  padding-block: 1.25rem 1.5rem;
+  padding-block: 0.65rem 0.75rem;
 }
 
 .footer-rights {
   justify-content: center;
-  gap: 0.5rem 1rem;
+  gap: 0.45rem 0.8rem;
   margin-top: 0;
   padding-top: 0;
   border-top: 0;
@@ -137,23 +140,35 @@
 }
 
 .footer-rights a::before {
-  content: "·";
-  margin-right: 1rem;
-  color: var(--ps-mgrey, #888888);
-  text-decoration: none;
+  content: none;
 }
 
 @media (max-width: 52rem) {
+  .footer-directory {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-identity,
+  .footer-panels {
+    text-align: center;
+  }
+
+  .footer-name,
+  .footer-role {
+    margin-inline: auto;
+  }
+
   .footer-panels {
     grid-template-columns: 1fr;
+  }
+
+  .footer-panel {
+    justify-items: center;
   }
 
   .footer-rights {
     display: grid;
     justify-items: center;
-  }
-
-  .footer-rights a::before {
-    content: none;
   }
 }

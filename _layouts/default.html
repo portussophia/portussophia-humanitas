@@ -3,12 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.asset_version }}">
 </head>
-<body>
+<body class="{% if page.layout %}layout-{{ page.layout }}{% endif %}">
+  <a class="skip-link" href="#main-content">Skip to content</a>
   {% include header.html %}
-  <main>
+  <main id="main-content" class="site-main">
     {{ content }}
   </main>
   {% include footer.html %}

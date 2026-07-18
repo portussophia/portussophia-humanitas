@@ -1,0 +1,17 @@
+{%- assign ps = site.portussophia | default: empty -%}
+{%- assign asset_origin = ps.asset_origin | default: 'https://assets.portussophia.com' -%}
+{%- assign shoreline_image = page.shoreline_image -%}
+{%- unless shoreline_image -%}
+  {%- assign shoreline_image = asset_origin | append: '/img/site/shoreline.jpg' -%}
+{%- endunless -%}
+{%- assign shoreline_position = page.shoreline_position | default: 'center 48%' -%}
+{%- assign shoreline_height = page.shoreline_height | default: 'clamp(13rem, 27vh, 21rem)' -%}
+<header class="site-header site-header--shoreline" role="banner" data-template-version="1.0.0" style="--shoreline-image: url('{{ shoreline_image }}'); --shoreline-position: {{ shoreline_position }}; --shoreline-height: {{ shoreline_height }};">
+  <div class="shell header-inner">
+    <a class="site-identity" href="{{ '/' | relative_url }}">
+      <span class="site-name">{{ ps.header_label | default: site.title | escape }}</span>
+      {%- if ps.header_role -%}<span class="site-role">{{ ps.header_role | escape }}</span>{%- endif -%}
+    </a>
+    {%- include anchor-menu.html -%}
+  </div>
+</header>

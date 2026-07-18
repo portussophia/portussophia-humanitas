@@ -71,12 +71,12 @@
 }
 
 .shoreline-view {
-  min-height: var(--shoreline-height, clamp(24rem, 58vh, 44rem));
+  min-height: var(--shoreline-height, clamp(13rem, 27vh, 21rem));
   background-color: var(--paper, #f1ece3);
   background-image: var(--shoreline-image);
   background-position: var(--shoreline-position, center center);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
 }
 
 .shoreline-content {
@@ -126,6 +126,10 @@
 @media (max-width: 40rem) {
   .site-header--compact .header-inner {
     width: min(calc(100% - 1.5rem), var(--shell, 76rem));
+  }
+
+  .shoreline-view {
+    background-size: cover;
   }
 
   .shoreline-content-inner {

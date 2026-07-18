@@ -1,0 +1,19 @@
+{%- assign ps = site.portussophia -%}
+{%- assign logo_url = ps.identity_logo_url | default: 'https://assets.portussophia.com/img/site/logo.png' -%}
+{%- assign logo_alt = ps.identity_logo_alt | default: 'PortusSophia programme mark' -%}
+{%- assign identity_title = ps.identity_title | default: site.title -%}
+{%- assign identity_declaration = ps.identity_declaration | default: site.description -%}
+<header class="site-header site-header--identity ps-sailcloth" role="banner" data-template-version="1.0.0-test">
+  <div class="shell identity-header-inner">
+    <img class="identity-header-logo" src="{{ logo_url }}" alt="{{ logo_alt | escape }}">
+    <div class="identity-header-copy">
+      <div class="identity-title-row">
+        <h1 class="identity-header-title">{{ identity_title | escape }}</h1>
+        {%- include anchor-menu.html -%}
+      </div>
+      {%- if identity_declaration -%}
+        <p class="identity-header-declaration">{{ identity_declaration | escape }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+</header>

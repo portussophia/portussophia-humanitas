@@ -1,0 +1,40 @@
+refrain: "Here and Now!"
+
+identity:
+  name: "PortusHumanitas™"
+  role: "A Harbor of Inquiry within PortusSophia™"
+
+panels:
+  - label: "Humanitas"
+    links:
+      - label: "About"
+        url: "/about/"
+      - label: "Corpus"
+        url: "/corpus/"
+      - label: "Provenance"
+        url: "/provenance/"
+
+  - label: "Inquiry"
+    links:
+      - label: "Phrases"
+        url: "/phrases/"
+      - label: "Lineage"
+        url: "/lineage/"
+
+  - label: "PortusSophia"
+    links:
+      - label: "Public interface"
+        url: "https://public.portussophia.com/"
+        external: true
+      - label: "Founder portfolio"
+        url: "https://founder.portussophia.com/"
+        external: true
+      - label: "Programme GitHub"
+        url: "https://github.com/portussophia"
+        external: true
+
+rights:
+  owner: "PortusSophia, LLC"
+  year: 2026
+  label: "Rights and Use"
+  url: "/RIGHTS.md"

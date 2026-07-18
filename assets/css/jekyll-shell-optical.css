@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+.footer-directory {
+  align-items: start;
+}
+
 /* The second row is one centered three-line closing stack. */
 .footer-closing-band {
   padding: 0;
@@ -16,7 +20,7 @@
   display: grid;
   justify-items: center;
   gap: 0.06rem;
-  padding-block: 0.48rem 0.38rem;
+  padding-block: 1.5rem 0.55rem;
   text-align: center;
 }
 
@@ -51,7 +55,7 @@
 
 @media (max-width: 34rem) {
   .footer-closing {
-    padding-block: 0.55rem 0.48rem;
+    padding-block: 1rem 0.5rem;
   }
 
   .footer-copyright {

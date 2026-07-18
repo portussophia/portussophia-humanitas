@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="shoreline-masthead-layout">
+  <section class="shoreline-masthead-content ps-sailcloth">
+    <div class="shell shoreline-content-inner">
+      {%- if page.title -%}
+        <header class="shoreline-page-header">
+          <h1>{{ page.title | escape }}</h1>
+        </header>
+      {%- endif -%}
+
+      <div class="shoreline-page-content">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+</article>

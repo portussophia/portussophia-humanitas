@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: shoreline-masthead
 title: Provenance
 permalink: /provenance/
 ---
-
-# Provenance
 
 - [Ledgers](/provenance/ledgers/)
 - [Witnesses](/provenance/witnesses/)

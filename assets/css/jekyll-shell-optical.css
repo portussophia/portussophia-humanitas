@@ -1,0 +1,264 @@
+/* PortusSophia™ Jekyll shell optical refinements.
+ * Loaded after jekyll-shell-polish.css.
+ */
+
+/* Compact masthead shares the same horizontal registration as page and footer shells. */
+.site-header--compact .header-inner {
+  width: min(calc(100% - 2.5rem), var(--shell, 76rem));
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+/* Give the navigation control a stable square frame in every header variant. */
+.anchor-menu {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+/* Home content continues the canonical navy sailcloth field beneath its masthead. */
+.home-page {
+  background-color: var(--ps-navy, #0d1b2a);
+  background-image: var(--ps-sailcloth-navy);
+  background-repeat: repeat;
+  background-size: 6px 6px;
+  color: var(--parchment, #faf8f5);
+}
+
+.home-page .home-introduction h2 {
+  color: var(--parchment, #faf8f5);
+}
+
+.site-footer.ps-sailcloth {
+  padding-block: 0;
+}
+
+/* The first footer row remains the site-specific context | links grid. */
+.footer-site-band {
+  padding: 0;
+}
+
+.footer-directory {
+  align-items: start;
+}
+
+/* The second row is one centered three-line closing stack. */
+.footer-closing-band {
+  padding: 0;
+}
+
+.footer-closing {
+  display: grid;
+  justify-items: center;
+  gap: 0.06rem;
+  padding-block: 1.5rem 0.55rem;
+  text-align: center;
+}
+
+.footer-closing .footer-refrain {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  transform: none;
+  font-size: clamp(1.16rem, 1.55vw, 1.42rem);
+  line-height: 1.05;
+}
+
+.footer-copyright {
+  max-width: none;
+  margin: 0;
+  color: var(--ps-grey, #cccccc);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.72rem;
+  line-height: 1.08;
+}
+
+.footer-rights-link {
+  color: var(--parchment, #faf8f5);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.72rem;
+  line-height: 1.08;
+  text-underline-offset: 0.18em;
+}
+
+.footer-rights-link:hover,
+.footer-rights-link:focus-visible {
+  color: var(--ps-gold, #f0b53f);
+}
+
+/* Shoreline composition: photograph first, then a constituted sailcloth content field. */
+.shoreline-layout {
+  background: var(--ps-navy, #0d1b2a);
+}
+
+.shoreline-view {
+  min-height: var(--shoreline-height, clamp(13rem, 27vh, 21rem));
+  background-color: var(--paper, #f1ece3);
+  background-image: var(--shoreline-image);
+  background-position: var(--shoreline-position, center center);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* Shoreline masthead composition: the photograph is the header field. */
+.site-header--shoreline {
+  min-height: var(--shoreline-height, clamp(13rem, 27vh, 21rem));
+  background-color: var(--ps-navy, #0d1b2a);
+  background-image: var(--shoreline-image);
+  background-position: var(--shoreline-position, center 48%);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.site-header--shoreline .header-inner {
+  display: grid;
+  width: min(calc(100% - 2.5rem), var(--shell, 76rem));
+  min-height: var(--shoreline-height, clamp(13rem, 27vh, 21rem));
+  margin-inline: auto;
+  padding: clamp(1rem, 1vw, 1.45rem) 0;
+  grid-template-columns: minmax(0, 1fr) 3.25rem;
+  align-items: start;
+}
+
+.site-header--shoreline .shoreline-site-lockup {
+  display: grid;
+  width: fit-content;
+  min-width: 0;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(0.8rem, 1.5vw, 1.15rem);
+}
+
+.shoreline-programme-mark {
+  display: block;
+  width: clamp(2.9rem, 4vw, 3.6rem);
+  height: auto;
+  filter: drop-shadow(0 1px 0 rgba(13, 27, 42, 0.55)) drop-shadow(0 0.25rem 0.55rem rgba(13, 27, 42, 0.28));
+}
+
+.shoreline-site-copy {
+  display: grid;
+  min-width: 0;
+  align-content: center;
+  gap: 0.05rem;
+}
+
+.site-header--shoreline .site-identity,
+.site-header--shoreline .site-name,
+.site-header--shoreline .site-role {
+  text-shadow: 0 1px 0 rgba(13, 27, 42, 0.8), 0 2px 0.8rem rgba(13, 27, 42, 0.7);
+}
+
+.site-header--shoreline .site-name {
+  font-size: 2rem;
+}
+
+.site-header--shoreline .site-role {
+  margin-top: 0;
+  color: var(--ps-dark, #1a1a2e);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.site-header--shoreline .anchor-menu > summary.menu-trigger {
+  color: var(--ps-dark, #1a1a2e);
+  filter: drop-shadow(0 1px 0 rgba(13, 27, 42, 0.8)) drop-shadow(0 2px 0.5rem rgba(13, 27, 42, 0.65));
+}
+
+/* Shoreline navigation inverts the complete row on hover or keyboard focus. */
+.site-header--shoreline .anchor-menu-panel .nav-list li:hover > a,
+.site-header--shoreline .anchor-menu-panel .nav-list a:focus-visible,
+.site-header--shoreline-identity .anchor-menu-panel .nav-list li:hover > a,
+.site-header--shoreline-identity .anchor-menu-panel .nav-list a:focus-visible {
+  border-left-color: var(--ps-gold, #f0b53f);
+  background-color: var(--ps-dark, #1a1a2e);
+  color: var(--parchment, #faf8f5);
+}
+
+.shoreline-content,
+.shoreline-masthead-content {
+  background-color: var(--ps-navy, #0d1b2a);
+  color: var(--parchment, #faf8f5);
+}
+
+.shoreline-content {
+  border-top: 0.18rem solid var(--ps-gold, #f0b53f);
+}
+
+.shoreline-content-inner {
+  padding-block: clamp(2.75rem, 6vw, 5rem);
+}
+
+.shoreline-page-header {
+  padding: 0;
+}
+
+.shoreline-page-header h1 {
+  max-width: 18ch;
+  margin: 0;
+  color: var(--parchment, #faf8f5);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.shoreline-page-content {
+  max-width: 58rem;
+  margin-top: clamp(1.25rem, 3vw, 2rem);
+  color: var(--parchment, #faf8f5);
+}
+
+.shoreline-page-content > :first-child {
+  margin-top: 0;
+}
+
+.shoreline-page-content h2,
+.shoreline-page-content h3,
+.shoreline-page-content h4 {
+  color: var(--parchment, #faf8f5);
+}
+
+.shoreline-page-content a {
+  color: var(--ps-gold, #f0b53f);
+}
+
+@media (max-width: 40rem) {
+  .site-header--compact .header-inner,
+  .site-header--shoreline .header-inner {
+    width: min(calc(100% - 1.5rem), var(--shell, 76rem));
+  }
+
+  .shoreline-view,
+  .site-header--shoreline {
+    background-size: cover;
+  }
+
+  .site-header--shoreline .shoreline-site-lockup {
+    gap: 0.65rem;
+  }
+
+  .shoreline-programme-mark {
+    width: 2.4rem;
+  }
+
+  .site-header--shoreline .site-name {
+    font-size: clamp(1.35rem, 6.5vw, 1.7rem);
+  }
+
+  .site-header--shoreline .site-role {
+    font-size: clamp(0.82rem, 4vw, 1rem);
+  }
+
+  .shoreline-content-inner {
+    padding-block: 2.5rem 3rem;
+  }
+}
+
+@media (max-width: 34rem) {
+  .footer-closing {
+    padding-block: 1rem 0.5rem;
+  }
+
+  .footer-copyright {
+    max-width: 30rem;
+  }
+}

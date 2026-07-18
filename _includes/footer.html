@@ -1,3 +1,40 @@
-<footer>
-  <p>&copy; {{ 'now' | date: '%Y' }} PortusSophia. Here and Now!</p>
+{%- assign footer = site.data.footer -%}
+{%- assign ps = site.portussophia -%}
+{%- assign rights_url = footer.rights.url | default: ps.rights_url | default: '/RIGHTS.md' -%}
+{%- assign rights_label = footer.rights.label | default: 'Rights and Use' -%}
+{%- assign copyright_owner = footer.rights.owner | default: 'PortusSophia, LLC' -%}
+{%- assign copyright_year = footer.rights.year -%}
+{%- unless copyright_year -%}
+  {%- assign copyright_year = site.time | date: '%Y' -%}
+{%- endunless -%}
+<footer class="site-footer ps-sailcloth">
+  <div class="footer-band footer-site-band">
+    <div class="shell footer-directory">
+      <div class="footer-identity">
+        <p class="footer-name">{{ footer.identity.name | default: site.title | escape }}</p>
+        {%- if footer.identity.role -%}<p class="footer-role">{{ footer.identity.role | escape }}</p>{%- endif -%}
+      </div>
+
+      {%- if footer.panels -%}
+        <nav class="footer-panels" aria-label="Site footer navigation">
+          {%- for panel in footer.panels -%}
+            <div class="footer-panel">
+              <span class="footer-panel-label">{{ panel.label | escape }}</span>
+              {%- for link in panel.links -%}
+                <a href="{{ link.url }}"{% if link.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.label | escape }}</a>
+              {%- endfor -%}
+            </div>
+          {%- endfor -%}
+        </nav>
+      {%- endif -%}
+    </div>
+  </div>
+
+  <div class="footer-band footer-closing-band">
+    <div class="shell footer-closing">
+      <p class="footer-refrain"><em>{{ footer.refrain | default: 'Here and Now!' | escape }}</em></p>
+      <p class="footer-copyright">Copyright © {{ copyright_year }} {{ copyright_owner | escape }}. All rights reserved.</p>
+      <a class="footer-rights-link" href="{{ rights_url | relative_url }}">{{ rights_label | escape }}</a>
+    </div>
+  </div>
 </footer>

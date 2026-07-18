@@ -1,7 +1,5 @@
 ---
-layout: page
-title: About
+layout: shoreline-masthead
+title: About PortusHumanitas™
 permalink: /about/
 ---
-
-# About PortusSophia Humanitas

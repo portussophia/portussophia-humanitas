@@ -1,7 +1,5 @@
 ---
-layout: page
+layout: shoreline-masthead
 title: Phrases
 permalink: /phrases/
 ---
-
-# Phrases

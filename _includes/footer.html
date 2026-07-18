@@ -1,13 +1,24 @@
 <footer class="site-footer">
-  <div class="shell footer-inner">
-    <div>
-      <p class="footer-title">PortusHumanitas™</p>
-      <p class="footer-note">Public reading and provenance surface for the sealed humanistic corpus.</p>
+  <div class="shell footer-inner footer-inner--three-row">
+    <p class="footer-refrain"><em>Here and Now!</em></p>
+
+    <div class="footer-identity-row">
+      <div>
+        <p class="footer-title">PortusHumanitas™</p>
+        <p class="footer-note">Public reading and provenance surface for the sealed humanistic corpus.</p>
+      </div>
+      <nav class="footer-links" aria-label="Humanitas and related links">
+        <a href="{{ '/corpus/' | relative_url }}">Corpus</a>
+        <a href="{{ '/provenance/' | relative_url }}">Provenance</a>
+        <a href="https://public.portussophia.com">PortusSophia Public ↗</a>
+        <a href="https://founder.portussophia.com">Founder ↗</a>
+      </nav>
     </div>
-    <div class="footer-links">
-      <a href="https://public.portussophia.com">PortusSophia public interface ↗</a>
-      <a href="https://founder.portussophia.com">Founder portfolio ↗</a>
+
+    <div class="footer-rights-row">
+      <p>&copy; {{ 'now' | date: '%Y' }} PortusSophia, LLC. All rights reserved.</p>
+      <p>PortusSophia™ and related names and marks are trademarks of PortusSophia, LLC.</p>
+      <p><a href="{{ '/RIGHTS.html' | relative_url }}">Rights and permitted use</a></p>
     </div>
-    <p class="footer-copyright">&copy; {{ 'now' | date: '%Y' }} PortusSophia, LLC. All rights reserved.</p>
   </div>
 </footer>

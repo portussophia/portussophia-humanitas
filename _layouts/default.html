@@ -7,6 +7,7 @@
   {% feed_meta %}
   <link rel="stylesheet" href="{{ site.asset_host }}/styles/v1/site.css?v={{ site.asset_version }}">
   <link rel="stylesheet" href="{{ site.asset_host }}/styles/v1/background-sailcloth.css?v={{ site.asset_version }}">
+  <link rel="stylesheet" href="{{ site.asset_host }}/styles/v1/navigation.css?v={{ site.asset_version }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.asset_version }}">
 </head>
 <body class="{% if page.layout %}layout-{{ page.layout }}{% endif %}">
@@ -16,5 +17,6 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  <script src="{{ site.asset_host }}/js/navigation.js?v={{ site.asset_version }}" defer></script>
 </body>
 </html>

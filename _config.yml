@@ -5,7 +5,8 @@ description: >-
 url: "https://humanitas.portussophia.com"
 baseurl: ""
 author: "James Roy Dennis"
-asset_version: "20260717-1"
+asset_host: "https://assets.portussophia.com"
+asset_version: "20260718-1"
 
 markdown: kramdown
 permalink: pretty

@@ -8,12 +8,6 @@
   {%- assign copyright_year = site.time | date: '%Y' -%}
 {%- endunless -%}
 <footer class="site-footer ps-sailcloth">
-  <div class="footer-band footer-refrain-band">
-    <div class="shell">
-      <p class="footer-refrain"><em>{{ footer.refrain | default: 'Here and Now!' | escape }}</em></p>
-    </div>
-  </div>
-
   <div class="footer-band footer-site-band">
     <div class="shell footer-directory">
       <div class="footer-identity">
@@ -36,10 +30,11 @@
     </div>
   </div>
 
-  <div class="footer-band footer-rights-band">
-    <div class="shell footer-rights">
-      <span>Copyright © {{ copyright_year }} {{ copyright_owner | escape }}. All rights reserved.</span>
-      <a href="{{ rights_url | relative_url }}">{{ rights_label | escape }}</a>
+  <div class="footer-band footer-closing-band">
+    <div class="shell footer-closing">
+      <p class="footer-refrain"><em>{{ footer.refrain | default: 'Here and Now!' | escape }}</em></p>
+      <p class="footer-copyright">Copyright © {{ copyright_year }} {{ copyright_owner | escape }}. All rights reserved.</p>
+      <a class="footer-rights-link" href="{{ rights_url | relative_url }}">{{ rights_label | escape }}</a>
     </div>
   </div>
 </footer>

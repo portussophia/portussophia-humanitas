@@ -1,10 +1,14 @@
 {%- assign header_variant = page.header_variant | default: 'compact' -%}
 {%- if page.layout == 'home' and page.header_variant == nil -%}
   {%- assign header_variant = 'identity' -%}
+{%- elsif page.layout == 'shoreline-masthead' and page.header_variant == nil -%}
+  {%- assign header_variant = 'shoreline' -%}
 {%- endif -%}
 
 {%- if header_variant == 'identity' -%}
   {%- include header-identity.html -%}
+{%- elsif header_variant == 'shoreline' -%}
+  {%- include header-shoreline.html -%}
 {%- else -%}
   {%- include header-compact.html -%}
 {%- endif -%}

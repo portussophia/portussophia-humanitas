@@ -9,6 +9,21 @@
   padding-inline: 0;
 }
 
+/* Give the navigation control a stable square frame in every header variant. */
+.anchor-menu {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+/* Home content continues the canonical navy sailcloth field beneath its masthead. */
+.home-page {
+  background-color: var(--ps-navy, #0d1b2a);
+  background-image: var(--ps-sailcloth-navy);
+  background-repeat: repeat;
+  background-size: 6px 6px;
+  color: var(--parchment, #faf8f5);
+}
+
 .site-footer.ps-sailcloth {
   padding-block: 0;
 }

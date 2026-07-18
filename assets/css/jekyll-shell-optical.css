@@ -79,10 +79,52 @@
   background-size: 100% auto;
 }
 
-.shoreline-content {
-  border-top: 0.18rem solid var(--ps-gold, #f0b53f);
+/* Shoreline masthead composition: the photograph is the header field. */
+.site-header--shoreline {
+  min-height: var(--shoreline-height, clamp(13rem, 27vh, 21rem));
+  background-color: var(--ps-navy, #0d1b2a);
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(13, 27, 42, 0.78) 0%,
+      rgba(13, 27, 42, 0.42) 34%,
+      rgba(13, 27, 42, 0.14) 68%,
+      rgba(13, 27, 42, 0.42) 100%
+    ),
+    var(--shoreline-image);
+  background-position: center center, var(--shoreline-position, center 48%);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.site-header--shoreline .header-inner {
+  display: grid;
+  width: min(calc(100% - 2.5rem), var(--shell, 76rem));
+  min-height: var(--shoreline-height, clamp(13rem, 27vh, 21rem));
+  margin-inline: auto;
+  padding: clamp(1rem, 2vw, 1.45rem) 0;
+  grid-template-columns: minmax(0, 1fr) 3.25rem;
+  align-items: start;
+}
+
+.site-header--shoreline .site-identity,
+.site-header--shoreline .site-name,
+.site-header--shoreline .site-role {
+  text-shadow: 0 1px 0 rgba(13, 27, 42, 0.8), 0 2px 0.8rem rgba(13, 27, 42, 0.7);
+}
+
+.site-header--shoreline .anchor-menu > summary.menu-trigger {
+  filter: drop-shadow(0 1px 0 rgba(13, 27, 42, 0.8)) drop-shadow(0 2px 0.5rem rgba(13, 27, 42, 0.65));
+}
+
+.shoreline-content,
+.shoreline-masthead-content {
   background-color: var(--ps-navy, #0d1b2a);
   color: var(--parchment, #faf8f5);
+}
+
+.shoreline-content {
+  border-top: 0.18rem solid var(--ps-gold, #f0b53f);
 }
 
 .shoreline-content-inner {
@@ -124,11 +166,13 @@
 }
 
 @media (max-width: 40rem) {
-  .site-header--compact .header-inner {
+  .site-header--compact .header-inner,
+  .site-header--shoreline .header-inner {
     width: min(calc(100% - 1.5rem), var(--shell, 76rem));
   }
 
-  .shoreline-view {
+  .shoreline-view,
+  .site-header--shoreline {
     background-size: cover;
   }
 

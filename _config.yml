@@ -1,12 +1,33 @@
-title: PortusSophia Humanitas
+title: "PortusHumanitas™"
 description: >-
-  Public corpus and provenance record for the PortusSophia philosophy-of-science
-  research program.
+  Humanities, provenance, and interpretive inquiry within PortusSophia™.
+url: "https://humanitas.portussophia.com"
 baseurl: ""
-url: ""
+lang: en
+
+portussophia:
+  template_version: "1.0.0-test"
+  asset_origin: "https://assets.portussophia.com"
+  asset_version: "20260718-2"
+
+  header_label: "PortusHumanitas™"
+  header_role: "A Harbor of Inquiry"
+
+  identity_logo_url: "https://assets.portussophia.com/img/site/logo.png"
+  identity_logo_alt: "PortusSophia programme mark"
+  identity_title: "PortusHumanitas™"
+  identity_declaration: "Humanities, provenance, and interpretive inquiry within PortusSophia™."
+
+  rights_url: "/RIGHTS.md"
 
 markdown: kramdown
 theme: null
+permalink: pretty
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 collections:
   sealed:
@@ -25,4 +46,3 @@ exclude:
   - Gemfile.lock
   - scripts/
   - README.md
-  - RIGHTS.md

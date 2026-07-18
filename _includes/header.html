@@ -10,13 +10,8 @@
     <li><a href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
   {%- endfor -%}
 {%- endcapture -%}
-<header class="site-header is-solid" role="banner">
+<header class="site-header site-header--overlay is-overlay" role="banner">
   <div class="shell header-inner">
-    <a class="site-identity site-brand" href="{{ '/' | relative_url }}" aria-label="PortusHumanitas home">
-      <span class="site-name site-brand__title">PortusHumanitas™</span>
-      <span class="site-role site-brand__subtitle">A Harbor of Lived Inquiry</span>
-    </a>
-
     <details class="anchor-menu">
       <summary class="home-anchor menu-trigger" aria-label="Open primary navigation">
         <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true" focusable="false">

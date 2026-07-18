@@ -65,9 +65,71 @@
   color: var(--ps-gold, #f0b53f);
 }
 
+/* Shoreline composition: photograph first, then a constituted sailcloth content field. */
+.shoreline-layout {
+  background: var(--ps-navy, #0d1b2a);
+}
+
+.shoreline-view {
+  min-height: var(--shoreline-height, clamp(24rem, 58vh, 44rem));
+  background-color: var(--paper, #f1ece3);
+  background-image: var(--shoreline-image);
+  background-position: var(--shoreline-position, center center);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shoreline-content {
+  border-top: 0.18rem solid var(--ps-gold, #f0b53f);
+  background-color: var(--ps-navy, #0d1b2a);
+  color: var(--parchment, #faf8f5);
+}
+
+.shoreline-content-inner {
+  padding-block: clamp(2.75rem, 6vw, 5rem);
+}
+
+.shoreline-page-header {
+  padding: 0;
+}
+
+.shoreline-page-header h1 {
+  max-width: 18ch;
+  margin: 0;
+  color: var(--parchment, #faf8f5);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.shoreline-page-content {
+  max-width: 58rem;
+  margin-top: clamp(1.25rem, 3vw, 2rem);
+  color: var(--parchment, #faf8f5);
+}
+
+.shoreline-page-content > :first-child {
+  margin-top: 0;
+}
+
+.shoreline-page-content h2,
+.shoreline-page-content h3,
+.shoreline-page-content h4 {
+  color: var(--parchment, #faf8f5);
+}
+
+.shoreline-page-content a {
+  color: var(--ps-gold, #f0b53f);
+}
+
 @media (max-width: 40rem) {
   .site-header--compact .header-inner {
     width: min(calc(100% - 1.5rem), var(--shell, 76rem));
+  }
+
+  .shoreline-content-inner {
+    padding-block: 2.5rem 3rem;
   }
 }
 

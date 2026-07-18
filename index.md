@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: shoreline-home
 title: Home
 ---
 

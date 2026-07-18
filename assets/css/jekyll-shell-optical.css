@@ -1,0 +1,25 @@
+/* PortusSophia™ Jekyll shell optical refinements.
+ * Loaded after jekyll-shell-polish.css.
+ */
+
+.footer-refrain {
+  transform: translateY(-0.1rem);
+}
+
+.footer-rights-band {
+  padding: 0;
+}
+
+.footer-rights {
+  display: grid;
+  min-height: 0;
+  align-content: center;
+  justify-items: center;
+  gap: 0.04rem;
+  padding-block: 0.22rem 0.16rem;
+}
+
+.footer-rights span,
+.footer-rights a {
+  line-height: 1.1;
+}

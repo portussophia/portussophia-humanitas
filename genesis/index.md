@@ -1,6 +1,6 @@
 ---
 layout: shoreline-masthead
-title: "Genesis PortusSophiae — Rediviva"
+title: "Genesis PortusSophia"
 permalink: /genesis/
 ---
 

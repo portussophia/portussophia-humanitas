@@ -9,7 +9,7 @@ author: "James Roy Dennis"
 portussophia:
   template_version: "1.0.0"
   asset_origin: "https://assets.portussophia.com"
-  asset_version: "20260719-4"
+  asset_version: "20260719-5"
 
   header_label: "PortusHumanitas™"
   header_role: "A Harbor of Lived Inquiry"

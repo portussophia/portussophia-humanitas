@@ -4,41 +4,46 @@ title: "About PortusHumanitas™"
 permalink: /about/
 ---
 
-*The harbor in which lived human experience became sustained inquiry—preserved without converting biography into warrant.*
+> *A harbor in which lived human experience became sustained inquiry.*
 
-PortusHumanitas™ is the public reading and provenance surface for a bounded humanistic record: literary formations, philosophical bridges, bilingual phrases, early operational translations, corrections, and the records that may preserve their integrity.
+PortusHumanitas™ holds the writing that came before PortusSophia had a settled research vocabulary: autobiography, ethical reflection, theology, Latin and English literary composition, philosophical essays, bridges between unlike registers, symbolic equations, letters, invocations, corrections, and the memory of work carried under real conditions.
 
-It does not represent or speak for the humanities as a whole. It does not convert lived experience into proof, ask biography to validate research, or treat intimacy as a public entitlement.
+It is not “the humanities” gathered under one name. It is one human record working through forms that belong within the humanities.
 
-## What is public now
+## Why it exists
 
-The present site contains:
+The later research can be read without knowing every detail of the life that preceded it. But something important is lost when the work appears to have begun as an abstract architecture assembled outside grief, faith, error, love, economic pressure, recovery, humor, work, and responsibility.
 
-- editorial orientation to the Humanitas corpus;
-- selected phrases already approved for public presentation;
-- their historical standing, correction notes, and later relations;
-- the derivation path from lived and literary inquiry toward disciplined research;
-- an empty receiving structure for future sealed artifacts and provenance records.
+The human record does not prove the research. It shows why the questions were not disposable.
 
-No sealed artifact, ledger, witness, seal, or correction record has yet been admitted to the public corpus.
+> One can know the weight of a thing long before one knows its name.
 
-## What governed admission may add
+The Book carried that weight before the later language of interface, admissibility, constraint, remainder, standing, and legitimate cost placement became available.
 
-A future public artifact may be added only when its existing authorization and standing are established. Humanitas may then publish:
+## What belongs here
 
-- a byte-identical public copy;
-- its declared digest and existing provenance records;
-- an editorial reading page that states chronology, relation, and present disposition;
-- documented correction or supersession relations.
+The public reading surface begins with:
 
-The editorial page does not inherit the standing of the artifact it introduces, and publication here does not reseal or reauthorize the source object.
+- the first assembled Book and its opening account of Baltimore;
+- Genesis and its originating language of hunger, descent, form, wind, care, and light;
+- Pater, Mater, and Revelatio;
+- the five bilingual Bridges;
+- early essays on optimization, friction, equilibrium, pain, and becoming;
+- phrases that continued to carry meaning after their original systems changed;
+- the point at which literary inquiry reached a burden that required disciplined research.
 
-## Private source estate
-
-The complete source estate remains private. Private or sensitive source material does not become public merely because it contributed to the history of the inquiry. Humanitas exposes only material deliberately admitted for public standing or selected for bounded editorial quotation.
+Private correspondence and intimate source material remain private. Their existence may belong to the history; their details are not owed to the reader.
 
 ## Relation to PortusSophia
 
-PortusHumanitas is not a competing doctrine or a decorative origin story. It preserves the point at which humanistic inquiry reached an unresolved bridge and disciplined research became necessary to continue this inquiry responsibly.
+PortusHumanitas does not compete with PortusSophia and is not decorative backstory for it.
 
-The main [PortusSophia public interface](https://public.portussophia.com) presents the candidate field architecture. Humanitas preserves the lived, literary, and philosophical provenance through which that architecture became possible, without claiming that the later architecture was logically entailed by every earlier page.
+PortusSophia is the later research programme and candidate field architecture. Humanitas is the record of the earlier human, literary, theological, and philosophical encounter from which that research became necessary.
+
+The relation is historical, not evidentiary. The Book does not validate the papers. The papers do not erase the Book.
+
+> The book reached the bridge.  
+> The record shows why it stopped.  
+> The research shows what the inquiry required next.
+
+Continue at the [PortusSophia public interface](https://public.portussophia.com).

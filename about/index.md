@@ -1,6 +1,6 @@
 ---
 layout: shoreline-masthead
-title: "About PortusHumanitas™"
+title: "About"
 permalink: /about/
 ---
 

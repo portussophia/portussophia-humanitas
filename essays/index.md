@@ -1,5 +1,6 @@
 ---
 layout: shoreline-masthead
+header_variant: shoreline
 title: "The Essays"
 permalink: /essays/
 ---

@@ -1,4 +1,68 @@
-/* PortusHumanitas™ content adaptation for the canonical shoreline reading field. */
+/* PortusHumanitas™ content adaptation for the canonical shoreline shell. */
+
+/* ---------- Homepage reading field ---------- */
+
+.is-home .site-main,
+.is-home .home-page,
+.is-home .humanitas-home-content {
+  background: var(--paper, #f1ece3);
+  color: var(--ps-dark, var(--slate, #1a1a2e));
+}
+
+.is-home .humanitas-home-content {
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+.is-home .humanitas-home-content p,
+.is-home .humanitas-home-content li {
+  color: inherit;
+}
+
+.is-home .humanitas-home-content h2,
+.is-home .humanitas-home-content h3,
+.is-home .humanitas-home-content strong {
+  color: var(--ps-navy, var(--navy, #0d1b2a));
+}
+
+.is-home .humanitas-home-content .eyebrow {
+  color: var(--copper, #8f6b4d);
+}
+
+.is-home .humanitas-home-content .home-epigraph {
+  border-left-color: var(--copper, #8f6b4d);
+  color: var(--ps-navy, var(--navy, #0d1b2a));
+}
+
+.is-home .humanitas-home-content .home-lede {
+  color: var(--warm-slate, #555555);
+}
+
+.is-home .humanitas-home-content .home-section + .home-section {
+  border-top-color: var(--rule, #cccccc);
+}
+
+.is-home .humanitas-home-content .standing-panel > div,
+.is-home .humanitas-home-content .path-card {
+  border-color: var(--rule, #cccccc);
+  background: var(--parchment, #faf8f5);
+  color: var(--ps-dark, var(--slate, #1a1a2e));
+}
+
+.is-home .humanitas-home-content .standing-panel p,
+.is-home .humanitas-home-content .path-card p {
+  color: inherit;
+}
+
+.is-home .humanitas-home-content a {
+  color: var(--link, #1a61ad);
+}
+
+.is-home .humanitas-home-content a:hover,
+.is-home .humanitas-home-content a:focus-visible {
+  color: var(--ps-navy, var(--navy, #0d1b2a));
+}
+
+/* ---------- Internal-page reading field ---------- */
 
 .shoreline-page-content .standing-panel > div,
 .shoreline-page-content .path-card,

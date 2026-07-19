@@ -14,3 +14,9 @@
   url: /phrases/
 - title: About
   url: /about/
+- title: PortusSophia™
+  url: https://public.portussophia.com
+  external: true
+- title: Founder
+  url: https://founder.portussophia.com
+  external: true

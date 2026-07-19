@@ -158,6 +158,13 @@
   color: var(--copper, #8f6b4d);
 }
 
+/* Keep one separator before the related PortusSophia surfaces. */
+.anchor-menu-panel .related-surface + .related-surface {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
 @media (max-width: 40rem) {
   .shoreline-page-content th,
   .shoreline-page-content td {

@@ -1,6 +1,6 @@
 title: "PortusHumanitas™"
 description: >-
-  Humanities, provenance, and interpretive inquiry within PortusSophia™.
+  Public orientation, phrase, lineage, and provenance surface for the PortusHumanitas humanistic record.
 url: "https://humanitas.portussophia.com"
 baseurl: ""
 lang: en
@@ -17,7 +17,7 @@ portussophia:
   identity_logo_url: "https://assets.portussophia.com/img/site/logo.png"
   identity_logo_alt: "PortusSophia programme mark"
   identity_title: "PortusHumanitas™"
-  identity_declaration: "Humanities, provenance, and interpretive inquiry within PortusSophia™."
+  identity_declaration: "A public record of lived human experience becoming sustained inquiry within PortusSophia™."
 
   rights_url: "/RIGHTS.md"
 

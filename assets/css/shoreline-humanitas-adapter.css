@@ -1,0 +1,32 @@
+/* PortusHumanitas™ content adaptation for the canonical shoreline reading field. */
+
+.shoreline-page-content .standing-panel > div,
+.shoreline-page-content .path-card,
+.shoreline-page-content .lineage-steps article {
+  border-color: var(--rule, #cccccc);
+  background: var(--parchment, #faf8f5);
+  color: var(--ps-dark, var(--slate, #1a1a2e));
+}
+
+.shoreline-page-content .standing-panel h2,
+.shoreline-page-content .standing-panel h3,
+.shoreline-page-content .path-card h2,
+.shoreline-page-content .path-card h3,
+.shoreline-page-content .lineage-steps h3 {
+  color: var(--ps-navy, var(--navy, #0d1b2a));
+}
+
+.shoreline-page-content .standing-panel p,
+.shoreline-page-content .path-card p,
+.shoreline-page-content .lineage-steps p {
+  color: inherit;
+}
+
+.shoreline-page-content .lineage-opening {
+  border-left-color: var(--copper, #8f6b4d);
+  color: var(--ps-dark, var(--slate, #1a1a2e));
+}
+
+.shoreline-page-content .lineage-steps article > span {
+  color: var(--copper, #8f6b4d);
+}

@@ -2,7 +2,7 @@
 
 **A Harbor of Inquiry**
 
-Public reading and provenance surface for the governed humanistic corpus from which the later PortusSophia™ research architecture became necessary.
+Public orientation, phrase, lineage, and provenance surface for the bounded humanistic record through which the later PortusSophia™ research programme became necessary to continue the inquiry responsibly.
 
 ## Public site
 
@@ -10,16 +10,21 @@ Public reading and provenance surface for the governed humanistic corpus from wh
 
 ## Repository boundary
 
-The complete source estate remains private under `PortusSophia/Book`.
+The complete source estate remains private and is not identified by public repository path here.
 
-This repository contains only:
+The repository currently contains:
 
-- sealed artifacts already authorized for public standing;
-- byte-identical public copies of those artifacts;
-- their existing public ledgers, witnesses, hashes, and seals;
-- editorial reading pages that explain chronology, relation, and standing.
+- editorial orientation to the Humanitas corpus;
+- selected public phrases with stated historical and present disposition;
+- the derivation path from lived and literary inquiry toward disciplined research;
+- empty receiving pages for future public ledgers, witnesses, seals, and corrections;
+- an empty sealed-artifact index and a verifier prepared for governed admission.
 
-Editorial pages do not inherit the standing of the sealed artifact they introduce.
+No sealed artifact or associated provenance record has yet been admitted. Editorial pages and excerpts are not sealed corpus objects and do not inherit the standing of any source artifact they discuss.
+
+## Governed admission
+
+A future sealed artifact may be admitted only after public release is authorized and the artifact’s existing standing, digest, and provenance references are identified. Humanitas does not reseal, rewrite, or create authority by copying a file into this repository.
 
 ## Adopted site shell
 
@@ -45,7 +50,7 @@ bundle exec jekyll build --trace
 
 ## Sealed artifact verification
 
-Each sealed artifact must be registered in `_data/artifact-index.yml` with its established SHA-256 digest.
+Each admitted sealed artifact must be registered in `_data/artifact-index.yml` with its established SHA-256 digest.
 
 ```bash
 python -m pip install PyYAML==6.0.2
@@ -54,10 +59,12 @@ python scripts/verify_sealed.py
 
 The verifier:
 
-- compares the stored file bytes with the declared digest;
+- compares stored file bytes with the declared digest;
 - rejects sealed files that are not indexed;
 - rejects paths outside `corpus/sealed/`;
 - does not require or add Jekyll front matter.
+
+This is presently an explicit pre-publication check. A successful result establishes byte identity only; it does not establish truth, endorsement, peer review, or current canonical authority.
 
 ## Rights
 

@@ -1,6 +1,6 @@
 title: "PortusHumanitas™"
 description: >-
-  Public orientation, phrase, lineage, and provenance surface for the PortusHumanitas humanistic record.
+  A Harbor of Lived Inquiry—the literary, ethical, theological, and philosophical writing from which PortusSophia later emerged.
 url: "https://humanitas.portussophia.com"
 baseurl: ""
 lang: en
@@ -9,15 +9,15 @@ author: "James Roy Dennis"
 portussophia:
   template_version: "1.0.0"
   asset_origin: "https://assets.portussophia.com"
-  asset_version: "20260719-2"
+  asset_version: "20260719-3"
 
   header_label: "PortusHumanitas™"
-  header_role: "A Harbor of Inquiry"
+  header_role: "A Harbor of Lived Inquiry"
 
   identity_logo_url: "https://assets.portussophia.com/img/site/logo.png"
   identity_logo_alt: "PortusSophia programme mark"
   identity_title: "PortusHumanitas™"
-  identity_declaration: "A public record of lived human experience becoming sustained inquiry within PortusSophia™."
+  identity_declaration: "The harbor in which lived human experience became sustained inquiry."
 
   rights_url: "/RIGHTS.md"
 

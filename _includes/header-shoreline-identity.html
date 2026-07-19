@@ -17,13 +17,16 @@
 <header
   class="site-header site-header--shoreline-identity"
   role="banner"
-  data-template-version="1.0.0-test"
+  data-template-version="1.0.0"
   style="--shoreline-image: url('{{ shoreline_image }}'); --shoreline-position: {{ shoreline_position }}; --shoreline-height: {{ shoreline_height }}; --shoreline-horizon: {{ shoreline_horizon }};"
 >
   <div class="shell shoreline-identity-header-inner">
     <img class="shoreline-identity-logo" src="{{ logo_url }}" alt="{{ logo_alt | escape }}">
     <div class="shoreline-identity-copy">
       <h1 class="shoreline-identity-title">{{ identity_title | escape }}</h1>
+      {%- if ps.header_role -%}
+        <p class="shoreline-identity-mobile-role">{{ ps.header_role | escape }}</p>
+      {%- endif -%}
       {%- if identity_declaration -%}
         <p class="shoreline-identity-declaration">{{ identity_declaration | escape }}</p>
       {%- endif -%}

@@ -1,0 +1,201 @@
+/* PortusSophia™ canonical shoreline reading surface.
+ *
+ * The shoreline photograph remains the masthead. The title and declared
+ * orientation continue on navy sailcloth; the substantive body begins on a
+ * light reading field.
+ */
+
+.shoreline-masthead-layout {
+  background: var(--paper, #f1ece3);
+  color: var(--ps-dark, var(--slate, #1a1a2e));
+}
+
+/* ---------- Opening orientation ---------- */
+
+.shoreline-page-opening {
+  background-color: var(--ps-navy, var(--navy, #0d1b2a));
+  background-image: var(--ps-sailcloth-navy);
+  background-repeat: repeat;
+  background-size: 6px 6px;
+  color: var(--parchment, #faf8f5);
+}
+
+.shoreline-opening-inner {
+  padding-block: clamp(3.25rem, 6vw, 5.5rem);
+}
+
+.shoreline-page-opening .shoreline-page-header h1 {
+  color: var(--parchment, #faf8f5);
+}
+
+.shoreline-opening-eyebrow {
+  margin: clamp(1.6rem, 3vw, 2.25rem) 0 0.75rem;
+  color: var(--ps-gold, var(--gold, #f0b53f));
+}
+
+.shoreline-opening-intro {
+  max-width: 48rem;
+  margin: 0;
+  color: var(--parchment, #faf8f5);
+  font-size: clamp(1.18rem, 2.2vw, 1.48rem);
+  line-height: 1.55;
+}
+
+/* ---------- Substantive reading field ---------- */
+
+.shoreline-page-reading {
+  background: var(--paper, #f1ece3);
+  color: var(--ps-dark, var(--slate, #1a1a2e));
+}
+
+.shoreline-reading-inner {
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+.shoreline-page-content {
+  margin-top: 0;
+  color: var(--ps-dark, var(--slate, #1a1a2e));
+}
+
+.shoreline-page-content > :first-child {
+  margin-top: 0;
+}
+
+.shoreline-page-content p,
+.shoreline-page-content li,
+.shoreline-page-content dd,
+.shoreline-page-content dt,
+.shoreline-page-content figcaption {
+  color: inherit;
+}
+
+.shoreline-page-content h2,
+.shoreline-page-content h3,
+.shoreline-page-content h4,
+.shoreline-page-content h5,
+.shoreline-page-content h6 {
+  color: var(--ps-navy, var(--navy, #0d1b2a));
+}
+
+.shoreline-page-content .eyebrow,
+.shoreline-page-content .section-label,
+.shoreline-page-content .standing {
+  color: var(--copper, #8f6b4d);
+}
+
+.shoreline-page-content .page-intro,
+.shoreline-page-content .lede,
+.shoreline-page-content .founder-role,
+.shoreline-page-content .domain-subtitle {
+  color: var(--warm-slate, #555555);
+}
+
+.shoreline-page-content a {
+  color: var(--link, #1a61ad);
+}
+
+.shoreline-page-content a:hover,
+.shoreline-page-content a:focus-visible {
+  color: var(--ps-navy, var(--navy, #0d1b2a));
+}
+
+.shoreline-page-content blockquote {
+  border-left-color: var(--copper, #8f6b4d);
+  color: var(--ps-navy, var(--navy, #0d1b2a));
+}
+
+.shoreline-page-content hr,
+.shoreline-page-content th,
+.shoreline-page-content td,
+.shoreline-page-content .record-meta,
+.shoreline-page-content .record-meta div {
+  border-color: var(--rule, #cccccc);
+}
+
+.shoreline-page-content code,
+.shoreline-page-content pre {
+  background: var(--parchment, #faf8f5);
+  color: var(--ps-dark, var(--slate, #1a1a2e));
+}
+
+.shoreline-page-content .button-link,
+.shoreline-page-content .button-link.secondary {
+  border-color: var(--ps-navy, var(--navy, #0d1b2a));
+  color: var(--ps-navy, var(--navy, #0d1b2a));
+}
+
+.shoreline-page-content .button-link:hover,
+.shoreline-page-content .button-link:focus-visible,
+.shoreline-page-content .button-link.secondary:hover,
+.shoreline-page-content .button-link.secondary:focus-visible {
+  border-color: var(--ps-navy, var(--navy, #0d1b2a));
+  background: var(--ps-navy, var(--navy, #0d1b2a));
+  color: var(--parchment, #faf8f5);
+}
+
+/* Reading cards are a lighter layer within the paper field. */
+.shoreline-page-content .path-card,
+.shoreline-page-content .route-card,
+.shoreline-page-content .artifact-card,
+.shoreline-page-content .bridge,
+.shoreline-page-content .boundary-note,
+.shoreline-page-content .domain-card,
+.shoreline-page-content .evaluation-card {
+  border-color: var(--rule, #cccccc);
+  background: var(--parchment, #faf8f5);
+  color: var(--ps-dark, var(--slate, #1a1a2e));
+}
+
+.shoreline-page-content .path-card h2,
+.shoreline-page-content .path-card h3,
+.shoreline-page-content .route-card h2,
+.shoreline-page-content .route-card h3,
+.shoreline-page-content .artifact-card h2,
+.shoreline-page-content .artifact-card h3,
+.shoreline-page-content .bridge h2,
+.shoreline-page-content .bridge h3,
+.shoreline-page-content .boundary-note h2,
+.shoreline-page-content .boundary-note h3,
+.shoreline-page-content .domain-card h2,
+.shoreline-page-content .domain-card h3,
+.shoreline-page-content .evaluation-card h2,
+.shoreline-page-content .evaluation-card h3 {
+  color: var(--ps-navy, var(--navy, #0d1b2a));
+}
+
+.shoreline-page-content .path-card .section-label,
+.shoreline-page-content .route-card .section-label,
+.shoreline-page-content .artifact-card .section-label,
+.shoreline-page-content .bridge .section-label,
+.shoreline-page-content .boundary-note .section-label,
+.shoreline-page-content .domain-card .section-label,
+.shoreline-page-content .evaluation-card .section-label {
+  color: var(--copper, #8f6b4d);
+}
+
+.shoreline-page-content .path-card a,
+.shoreline-page-content .route-card a,
+.shoreline-page-content .artifact-card a,
+.shoreline-page-content .bridge a,
+.shoreline-page-content .boundary-note a,
+.shoreline-page-content .domain-card a,
+.shoreline-page-content .evaluation-card a {
+  color: var(--link, #1a61ad);
+}
+
+.shoreline-page-content .path-card a:hover,
+.shoreline-page-content .path-card a:focus-visible,
+.shoreline-page-content .route-card a:hover,
+.shoreline-page-content .route-card a:focus-visible,
+.shoreline-page-content .artifact-card a:hover,
+.shoreline-page-content .artifact-card a:focus-visible,
+.shoreline-page-content .bridge a:hover,
+.shoreline-page-content .bridge a:focus-visible,
+.shoreline-page-content .boundary-note a:hover,
+.shoreline-page-content .boundary-note a:focus-visible,
+.shoreline-page-content .domain-card a:hover,
+.shoreline-page-content .domain-card a:focus-visible,
+.shoreline-page-content .evaluation-card a:hover,
+.shoreline-page-content .evaluation-card a:focus-visible {
+  color: var(--ps-navy, var(--navy, #0d1b2a));
+}

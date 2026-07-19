@@ -1,0 +1,105 @@
+/* PortusSophia™ canonical shoreline navigation treatment.
+ *
+ * Enlarges and repositions the shoreline anchor, preserves the gold token,
+ * and gives the trigger a 22-degree interaction tilt without moving its hit area.
+ */
+
+.site-header--shoreline .header-inner {
+  grid-template-columns: minmax(0, 1fr) 3.5rem;
+}
+
+.site-header--shoreline .anchor-menu,
+.site-header--shoreline-identity .anchor-menu {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.site-header--shoreline .anchor-menu {
+  align-self: start;
+  margin-top: -0.5rem;
+}
+
+.site-header--shoreline-identity .anchor-menu {
+  top: clamp(0.4rem, 1vw, 0.7rem);
+}
+
+.site-header--shoreline .anchor-menu > summary.menu-trigger,
+.site-header--shoreline-identity .anchor-menu > summary.menu-trigger {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: var(--ps-gold, #f0b53f);
+}
+
+.site-header--shoreline .anchor-menu > summary.menu-trigger:hover,
+.site-header--shoreline .anchor-menu > summary.menu-trigger:focus-visible,
+.site-header--shoreline-identity .anchor-menu > summary.menu-trigger:hover,
+.site-header--shoreline-identity .anchor-menu > summary.menu-trigger:focus-visible {
+  color: var(--ps-gold, #f0b53f);
+}
+
+.site-header--shoreline .anchor-menu > summary.menu-trigger svg,
+.site-header--shoreline-identity .anchor-menu > summary.menu-trigger svg {
+  width: 2.85rem;
+  height: 2.85rem;
+  transform-origin: 50% 50%;
+  transition: transform 150ms ease;
+}
+
+.site-header--shoreline .anchor-menu > summary.menu-trigger:hover svg,
+.site-header--shoreline .anchor-menu > summary.menu-trigger:focus-visible svg,
+.site-header--shoreline-identity .anchor-menu > summary.menu-trigger:hover svg,
+.site-header--shoreline-identity .anchor-menu > summary.menu-trigger:focus-visible svg {
+  transform: rotate(22deg);
+}
+
+/* Remove the pointer gap so the panel remains available while entering it. */
+.site-header--shoreline .anchor-menu-panel,
+.site-header--shoreline-identity .anchor-menu-panel {
+  top: 100%;
+}
+
+.site-header--shoreline .anchor-menu:focus-within .anchor-menu-panel,
+.site-header--shoreline-identity .anchor-menu:focus-within .anchor-menu-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .site-header--shoreline .anchor-menu:hover .anchor-menu-panel,
+  .site-header--shoreline-identity .anchor-menu:hover .anchor-menu-panel {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 40rem) {
+  .site-header--shoreline .header-inner {
+    grid-template-columns: minmax(0, 1fr) 3.1rem;
+  }
+
+  .site-header--shoreline .anchor-menu,
+  .site-header--shoreline-identity .anchor-menu,
+  .site-header--shoreline .anchor-menu > summary.menu-trigger,
+  .site-header--shoreline-identity .anchor-menu > summary.menu-trigger {
+    width: 3.1rem;
+    height: 3.1rem;
+  }
+
+  .site-header--shoreline .anchor-menu > summary.menu-trigger svg,
+  .site-header--shoreline-identity .anchor-menu > summary.menu-trigger svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .site-header--shoreline .anchor-menu {
+    margin-top: -0.35rem;
+  }
+
+  .site-header--shoreline-identity .anchor-menu {
+    top: 0.45rem;
+  }
+}

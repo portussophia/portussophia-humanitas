@@ -1,30 +1,32 @@
 # PortusHumanitas™
 
-**A Harbor of Inquiry**
+**A Harbor of Lived Inquiry**
 
-Public orientation, phrase, lineage, and provenance surface for the bounded humanistic record through which the later PortusSophia™ research programme became necessary to continue the inquiry responsibly.
+Public reading surface for the literary, ethical, theological, and philosophical writing from which PortusSophia later emerged.
 
 ## Public site
 
 `https://humanitas.portussophia.com`
 
-## Repository boundary
+## Reader-facing structure
 
-The complete source estate remains private and is not identified by public repository path here.
+The site now leads with the writing itself:
 
-The repository currently contains:
+- **The Book** — selected public passages from the first assembled manuscript;
+- **Genesis** — the full public Latin-English Genesis;
+- **Trilogia** — Pater, Mater, and Revelatio;
+- **The Bridges** — all five bilingual bridge texts;
+- **The Essays** — the four early philosophical essays listed in the publication corpus;
+- **Phrases** — an anthology of language carried forward;
+- **Lineage** — the story of the Book reaching the limit that made disciplined research necessary.
 
-- editorial orientation to the Humanitas corpus;
-- selected public phrases with stated historical and present disposition;
-- the derivation path from lived and literary inquiry toward disciplined research;
-- empty receiving pages for future public ledgers, witnesses, seals, and corrections;
-- an empty sealed-artifact index and a verifier prepared for governed admission.
+Provenance and verification remain supporting concerns rather than the public site’s organizing personality.
 
-No sealed artifact or associated provenance record has yet been admitted. Editorial pages and excerpts are not sealed corpus objects and do not inherit the standing of any source artifact they discuss.
+## Source boundary
 
-## Governed admission
+The complete source estate remains private. Public pages reproduce or excerpt material identified by the PortusHumanitas workbook as public-ready or suitable for bounded public use.
 
-A future sealed artifact may be admitted only after public release is authorized and the artifact’s existing standing, digest, and provenance references are identified. Humanitas does not reseal, rewrite, or create authority by copying a file into this repository.
+Private correspondence, sensitive records, and intimate material are not published merely because they contributed to the history of the inquiry.
 
 ## Adopted site shell
 
@@ -34,8 +36,6 @@ A future sealed artifact may be admitted only after public release is authorized
 - Humanitas keeps local Jekyll layout, include, and CSS mirrors because Liquid templates cannot be loaded remotely.
 
 ## Local build
-
-From the repository root:
 
 ```bash
 bundle check
@@ -47,24 +47,6 @@ For a production build:
 ```bash
 bundle exec jekyll build --trace
 ```
-
-## Sealed artifact verification
-
-Each admitted sealed artifact must be registered in `_data/artifact-index.yml` with its established SHA-256 digest.
-
-```bash
-python -m pip install PyYAML==6.0.2
-python scripts/verify_sealed.py
-```
-
-The verifier:
-
-- compares stored file bytes with the declared digest;
-- rejects sealed files that are not indexed;
-- rejects paths outside `corpus/sealed/`;
-- does not require or add Jekyll front matter.
-
-This is presently an explicit pre-publication check. A successful result establishes byte identity only; it does not establish truth, endorsement, peer review, or current canonical authority.
 
 ## Rights
 

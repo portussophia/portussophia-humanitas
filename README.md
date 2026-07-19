@@ -1,25 +1,32 @@
 # PortusHumanitas™
 
-**A Harbor of Inquiry**
+**A Harbor of Lived Inquiry**
 
-Public reading and provenance surface for the governed humanistic corpus from which the later PortusSophia™ research architecture became necessary.
+Public reading surface for the literary, ethical, theological, and philosophical writing from which PortusSophia later emerged.
 
 ## Public site
 
 `https://humanitas.portussophia.com`
 
-## Repository boundary
+## Reader-facing structure
 
-The complete source estate remains private under `PortusSophia/Book`.
+The site now leads with the writing itself:
 
-This repository contains only:
+- **The Book** — selected public passages from the first assembled manuscript;
+- **Genesis** — the full public Latin-English Genesis;
+- **Trilogia** — Pater, Mater, and Revelatio;
+- **The Bridges** — all five bilingual bridge texts;
+- **The Essays** — the four early philosophical essays listed in the publication corpus;
+- **Phrases** — an anthology of language carried forward;
+- **Lineage** — the story of the Book reaching the limit that made disciplined research necessary.
 
-- sealed artifacts already authorized for public standing;
-- byte-identical public copies of those artifacts;
-- their existing public ledgers, witnesses, hashes, and seals;
-- editorial reading pages that explain chronology, relation, and standing.
+Provenance and verification remain supporting concerns rather than the public site’s organizing personality.
 
-Editorial pages do not inherit the standing of the sealed artifact they introduce.
+## Source boundary
+
+The complete source estate remains private. Public pages reproduce or excerpt material identified by the PortusHumanitas workbook as public-ready or suitable for bounded public use.
+
+Private correspondence, sensitive records, and intimate material are not published merely because they contributed to the history of the inquiry.
 
 ## Adopted site shell
 
@@ -29,8 +36,6 @@ Editorial pages do not inherit the standing of the sealed artifact they introduc
 - Humanitas keeps local Jekyll layout, include, and CSS mirrors because Liquid templates cannot be loaded remotely.
 
 ## Local build
-
-From the repository root:
 
 ```bash
 bundle check
@@ -42,22 +47,6 @@ For a production build:
 ```bash
 bundle exec jekyll build --trace
 ```
-
-## Sealed artifact verification
-
-Each sealed artifact must be registered in `_data/artifact-index.yml` with its established SHA-256 digest.
-
-```bash
-python -m pip install PyYAML==6.0.2
-python scripts/verify_sealed.py
-```
-
-The verifier:
-
-- compares the stored file bytes with the declared digest;
-- rejects sealed files that are not indexed;
-- rejects paths outside `corpus/sealed/`;
-- does not require or add Jekyll front matter.
 
 ## Rights
 

@@ -1,12 +1,22 @@
 - title: Home
   url: /
-- title: About
-  url: /about/
-- title: Corpus
-  url: /corpus/
+- title: The Book
+  url: /book/
+- title: Genesis
+  url: /genesis/
+- title: Trilogia
+  url: /trilogia/
+- title: Bridges
+  url: /bridges/
+- title: Essays
+  url: /essays/
 - title: Phrases
   url: /phrases/
-- title: Provenance
-  url: /provenance/
-- title: Lineage
-  url: /lineage/
+- title: About
+  url: /about/
+- title: PortusSophia™
+  url: https://public.portussophia.com
+  external: true
+- title: Founder
+  url: https://founder.portussophia.com
+  external: true

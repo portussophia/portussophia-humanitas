@@ -48,6 +48,12 @@ For a production build:
 bundle exec jekyll build --trace
 ```
 
-## Rights
+## Rights and use
 
-No open-source or Creative Commons license is granted. See [RIGHTS.md](RIGHTS.md).
+Copyright © 2026 PortusSophia, LLC. All rights reserved.
+
+No open-source or Creative Commons license is granted.
+
+See [`RIGHTS.md`](RIGHTS.md) for the repository’s default rights and use statement.
+
+See [`LICENSE.md`](LICENSE.md) for the limited permissions specific to reading, citing, linking to, and briefly quoting material from PortusHumanitas™.
